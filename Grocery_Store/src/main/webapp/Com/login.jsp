@@ -13,7 +13,7 @@
 <body>
 	<style>
         body{
-            background: url('images/bg2.jpg')no-repeat;
+            background: url('../images/bg2.jpg')no-repeat;
             background-size: cover;
             background-position: center;
         }
@@ -21,14 +21,13 @@
     
 
     <header>
-    <br><br><br>
       <h1 class="name1">Grocery Store</h1>
     </header>
     
 
     <div class="wrapper">
         <span class="icon-close">
-        <a href="index.html">
+        <a href="index.jsp">
             <ion-icon name="close"></ion-icon>
         </a>
         </span>
@@ -82,10 +81,10 @@
       <div class="footer-column">
         <h4>Support</h4>
         <ul>
-          <li><a href="contactus.html">Contact Us</a></li>
-          <li><a href="T&C.html">Terms of Service</a></li>
-          <li><a href="P&P.html">Privacy Policy</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contactus.jsp">Contact Us</a></li>
+          <li><a href="T&C.jsp">Terms of Service</a></li>
+          <li><a href="P&P.jsp">Privacy Policy</a></li>
+          <li><a href="faq.jsp">FAQ</a></li>
         </ul>
       </div>
       <div class="footer-column">

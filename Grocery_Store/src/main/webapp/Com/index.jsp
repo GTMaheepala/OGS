@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar">
         <div class="nav-container">
-          <a href="index.html">
+          <a href="index.jsp">
             <img class="logo" src="../images/logo_OGS.png" alt="Logo image">
           </a>
           <h2 class="name">TheFreshMart</h2>
@@ -271,10 +271,10 @@
     <div class="footer-column">
       <h4>Support</h4>
       <ul>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="T&C.html">Terms of Service</a></li>
-        <li><a href="P&P.html">Privacy Policy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contactus.jsp">Contact Us</a></li>
+        <li><a href="T&C.jsp">Terms of Service</a></li>
+        <li><a href="P&P.jsp">Privacy Policy</a></li>
+        <li><a href="faq.jsp">FAQ</a></li>
       </ul>
     </div>
     <div class="footer-column">
