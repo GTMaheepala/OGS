@@ -20,7 +20,7 @@
     </a>
     <h2>Employee Panel</h2>
     <ul>
-      <a href="e_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
+      <a href="a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
       <a href="aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
       <a href="estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
       <a href="o&i.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
@@ -74,12 +74,12 @@
             <h3>Inventory Management</h3>
             <p>Manage stock levels</p>
           </div></a>
-      <a href="user_mane.html">
+      <a href="../admin/user_mane.jsp">
       <div class="card">
         <h3>User Account Manage</h3>
         <p>User Account List</p>
       </div></a>
-      <a href="employee_mane.html">
+      <a href="../admin/employee_mane.jsp">
       <div class="card">
         <h3>Employee Manage</h3>
         <p>Employee List</p>
