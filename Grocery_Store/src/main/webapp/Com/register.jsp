@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Register Page</title>
-    <link rel='stylesheet' type='text/css' href='style_com/style.css'>
-    <link rel="stylesheet" type="text/css" href="style/navigation.css">
-    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel='stylesheet' type='text/css' href='../css/register.css'>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src='js/register.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,7 +19,7 @@
             background-position: center;
         }
     </style>
-
+	<br><br>
       <!-- <img class="logo" src="images/logo_GS.png" alt="Logo image"> -->
       <h1 class="name1">Grocery Store</h1>
 
@@ -32,7 +32,7 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="InsertServlet" method="POST">
+            <form action="/Grocery_Store/InsertServlet" method="POST">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>

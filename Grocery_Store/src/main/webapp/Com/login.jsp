@@ -5,9 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Website with Login & Registration</title>
-    <link rel='stylesheet' href='style/login.css'>
-    <link rel="stylesheet" type="text/css" href="style/navigation.css">
-    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel='stylesheet' href='../css/login.css'>
+    <link rel="stylesheet" type="text/css" href="../css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
     
 
     <header>
+    <br><br><br>
       <h1 class="name1">Grocery Store</h1>
     </header>
     
@@ -34,7 +35,7 @@
 
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="LoginServlet" method="post">
+            <form action="/Grocery_Store/LoginServlet" method="post">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="mail"></ion-icon>

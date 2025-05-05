@@ -29,12 +29,12 @@ public class LoginServlet extends HttpServlet {
 			
 			if(userlogin != null && !userlogin.isEmpty()) {
 				String alertMessage = "Login Successful";
-				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='index.jsp'</script>");
+				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/index.jsp'</script>");
 			}
 			
 			else {
 				String alertMessage = "Invalid Credentials,plase try again";
-				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='login.jsp'</script>");
+				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/login.jsp'</script>");
 			}
 			
 		}

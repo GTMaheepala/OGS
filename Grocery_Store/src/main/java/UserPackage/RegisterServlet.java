@@ -28,10 +28,10 @@ public class RegisterServlet extends HttpServlet {
 		
 		if(isTrue == true) {
 			String alertMessage = "Register Successful";
-			response.getWriter().println("<script> alert('"+alertMessage+"'); window.location.href='login.jsp'</script>");
+			response.getWriter().println("<script> alert('"+alertMessage+"'); window.location.href='Com/login.jsp'</script>");
 		}
 		else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("register.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("Com/register.jsp");
 			dis2.forward(request, response);
 		}
 	}

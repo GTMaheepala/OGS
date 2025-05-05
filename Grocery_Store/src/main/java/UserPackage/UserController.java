@@ -42,33 +42,37 @@ public class UserController {
 	
 	//Login Validate
 	public static List<UserModel> validateLogin(String email, String password) {
-	    
-		ArrayList<UserModel> user = new ArrayList<>();
+	    ArrayList<UserModel> user = new ArrayList<>();
 
 	    try {
-	        //DC CONNECTION CALL
-	    	con=DB_Connection.getConnection();
-			stmt=con.createStatement();
-			
-			String sql = "select * from user where" + "email='"+email+"'and password='"+password+"'";
-			rs = stmt.executeQuery(sql);
-			
-			if(rs.next()) {
-				int id = rs.getInt(1);
-				String first_name = rs.getString(2);
-				String last_name = rs.getString(3);
-				String Email = rs.getString(4);
-				int phone_no = rs.getInt(5);
-				String Password = rs.getString(6);
-				
-				UserModel u = new UserModel(id,first_name,last_name,Email,phone_no,Password);
-				user.add(u);
-			}
+	        con = DB_Connection.getConnection();
+
+	        // Use PreparedStatement to avoid SQL syntax issues and SQL injection
+	        String sql = "SELECT * FROM user WHERE email = ? AND password = ?";
+	        PreparedStatement ps = con.prepareStatement(sql);
+	        ps.setString(1, email);
+	        ps.setString(2, password);
+
+	        rs = ps.executeQuery();
+
+	        if (rs.next()) {
+	            int id = rs.getInt(1);
+	            String first_name = rs.getString(2);
+	            String last_name = rs.getString(3);
+	            String Email = rs.getString(4);
+	            int phone_no = rs.getInt(5);
+	            String Password = rs.getString(6);
+
+	            UserModel u = new UserModel(id, first_name, last_name, Email, phone_no, Password);
+	            user.add(u);
+	        }
 
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
+
 	    return user;
 	}
+
 
 }
