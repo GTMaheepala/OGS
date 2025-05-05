@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' href='../css/register.css'>
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
-    <script src='js/register.js'></script>
+    <script src='../js/register.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>

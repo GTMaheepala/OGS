@@ -295,7 +295,7 @@
   </div>
 </footer>
 
-  <script src="js/index.js"></script>
-  <script src="js/footer.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/footer.js"></script>
 </body>
 </html>
