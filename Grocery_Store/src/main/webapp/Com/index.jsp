@@ -14,15 +14,15 @@
 <nav class="navbar">
         <div class="nav-container">
           <a href="index.html">
-            <img class="logo" src="images/logo_OGS.png" alt="Logo image">
+            <img class="logo" src="../images/logo_OGS.png" alt="Logo image">
           </a>
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="login.html"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
+            <li><a href="index.jsp" class="active">Home</a></li>
+            <li><a href="store.jsp">Store</a></li>
+            <li><a href="aboutus.jsp">About Us</a></li>
+            <li><a href="contactus.jsp">Contact Us</a></li>
+            <li><a href="login.jsp"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
             <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>
             <!-- <li><a href="#" onclick="toggleCartPanel()">Cart 🛒</a></li> -->
           </ul>
@@ -36,27 +36,27 @@
       <div class="carousel" id="carousel">
         <div class="banner">
           <a href="#">
-              <img src="images/banner1.png" alt="Banner 1"/>
+              <img src="../images/banner1.png" alt="Banner 1"/>
           </a>
         </div>
         <div class="banner">
           <a href="#">
-              <img src="images/ban2.png" alt="Banner 2"/>
+              <img src="../images/ban2.png" alt="Banner 2"/>
           </a>
         </div>
         <div class="banner">
           <a href="#">
-              <img src="images/ban3.png" alt="Banner 3"/>
+              <img src="../images/ban3.png" alt="Banner 3"/>
           </a>
         </div>
         <div class="banner">
           <a href="#">
-              <img src="images/ban4.png" alt="Banner 4"/>
+              <img src="../images/ban4.png" alt="Banner 4"/>
           </a>
         </div>
         <div class="banner">
           <a href="#">
-              <img src="images/banner5.png" alt="Banner 5"/>
+              <img src="../images/banner5.png" alt="Banner 5"/>
           </a>
         </div>
       </div>
@@ -83,20 +83,20 @@
   <div class="slider">
     <div class="slide-track">
       <!-- Repeat images twice for seamless loop -->
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner3.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner4.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner3.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner4.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
   
       <!-- Repeat for seamless looping -->
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner3.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner4.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner3.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner4.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
     </div>
   </div>
 
@@ -137,73 +137,73 @@
     <div class="category-grid">
       <div class="category-item">
         <a href="#">
-        <img src="images/catg1.png" alt="Avurudu Kade" />
+        <img src="../images/catg1.png" alt="Avurudu Kade" />
         <p>Avurudu Kade</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/vegetables.jpg" alt="Vegetables" />
+        <img src="../images/vegetables.jpg" alt="Vegetables" />
         <p>Vegetables</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/fruits.jpg" alt="Fruits" />
+        <img src="../images/fruits.jpg" alt="Fruits" />
         <p>Fruits</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/baby_pro.jpg" alt="Baby Products" />
+        <img src="../images/baby_pro.jpg" alt="Baby Products" />
         <p>Baby Products</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/dairy.jpg" alt="Dairy" />
+        <img src="../images/dairy.jpg" alt="Dairy" />
         <p>Dairy</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/beverages.jpg" alt="Beverages" />
+        <img src="../images/beverages.jpg" alt="Beverages" />
         <p>Beverages</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/food_cup.jpg" alt="Food Cupboard" />
+        <img src="../images/food_cup.jpg" alt="Food Cupboard" />
         <p>Food Cupboard</p></a>
       </div>
       <!-- Add more categories as needed -->
       <div class="category-item">
         <a href="#">
-        <img src="images/bakery.jpg" alt="Bakery" />
+        <img src="../images/bakery.jpg" alt="Bakery" />
         <p>Bakery</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/household.jpg" alt="Household" />
+        <img src="../images/household.jpg" alt="Household" />
         <p>Household</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/meats.jpg" alt="Meats" />
+        <img src="../images/meats.jpg" alt="Meats" />
         <p>Meats</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/seafood.jpg" alt="Seafood" />
+        <img src="../images/seafood.jpg" alt="Seafood" />
         <p>Seafood</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/cooking.jpg" alt="Cooking Essentials" />
+        <img src="../images/cooking.jpg" alt="Cooking Essentials" />
         <p>Cooking Essentials</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/snack.jpg" alt="Snacks & Confectionery" />
+        <img src="../images/snack.jpg" alt="Snacks & Confectionery" />
         <p>Snacks & Confectionery</p></a>
       </div>
       <div class="category-item">
         <a href="#">
-        <img src="images/frozen.jpg" alt="Frozen Food" />
+        <img src="../images/frozen.jpg" alt="Frozen Food" />
         <p>Frozen Food</p></a>
       </div>
     </div>
@@ -214,19 +214,19 @@
       <h2>Best Of Fruit & Veg</h2>
       <div class="product-grid">
         <div class="product">
-          <img src="images/tomato.jpg" alt="tomato"/>
+          <img src="../images/tomato.jpg" alt="tomato"/>
           <h3>Tomato</h3>
           <p>Rs. 375.00 / 500g</p>
           <button class="but2" onclick="addToCart('Apples', 375)">Add to Cart</button>
         </div>
         <div class="product">
-          <img src="images/onion.jpg" alt="onion"/>
+          <img src="../images/onion.jpg" alt="onion"/>
           <h3>Onion</h3>
           <p>Rs. 120.00 / 500g</p>
           <button class="but2" onclick="addToCart('Bananas', 120)">Add to Cart</button>
         </div>
         <div class="product">
-          <img src="images/carrot.jpg" alt="Carrot"/>
+          <img src="../images/carrot.jpg" alt="Carrot"/>
           <h3>Carrots</h3>
           <p>Rs. 340.00 / 500g</p>
           <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
