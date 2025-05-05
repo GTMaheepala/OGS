@@ -8,8 +8,9 @@ public class UserModel {
 	private String email;
 	private int phone_no;
 	private String password;
+	private int check_user;
 	
-	public UserModel(int id, String first_name, String last_name, String email, int phone_no, String password) {
+	public UserModel(int id, String first_name, String last_name, String email, int phone_no, String password, int check_user) {
 		super();
 		this.id = id;
 		this.first_name = first_name;
@@ -17,6 +18,7 @@ public class UserModel {
 		this.email = email;
 		this.phone_no = phone_no;
 		this.password = password;
+		this.check_user = check_user;
 	}
 
 	public int getId() {
@@ -67,6 +69,13 @@ public class UserModel {
 		this.password = password;
 	}
 	
+	public int getCheck_user() {
+		return check_user;
+	}
+
+	public void setCheck_user(int check_user) {
+		this.check_user = check_user;
+	}
 	
 	
 }

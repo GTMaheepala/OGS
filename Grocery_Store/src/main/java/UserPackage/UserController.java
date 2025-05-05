@@ -15,8 +15,8 @@ public class UserController {
 	private static Statement stmt = null;
 	private static ResultSet rs = null;
 	
-	//Insert Data Function
-	public static boolean insertdata(String first_name, String last_name, String email, int phone_no, String password) {
+	//Register Data Function
+	public static boolean insertdata(String first_name, String last_name, String email, int phone_no, String password, int check_user) {
 		 isSuccess = false;
 		
 		try {
@@ -25,7 +25,7 @@ public class UserController {
 			stmt=con.createStatement();
 			
 			//SQL QUERY
-			String sql = "insert into user values(0,'"+first_name+"', '"+last_name+"','"+email+"','"+phone_no+"','"+password+"')";
+			String sql = "insert into user values(0,'"+first_name+"', '"+last_name+"','"+email+"','"+phone_no+"','"+password+"','"+check_user+"')";
 			int rs = stmt.executeUpdate(sql);
 			if(rs>0) {
 				isSuccess = true;
@@ -62,8 +62,9 @@ public class UserController {
 	            String Email = rs.getString(4);
 	            int phone_no = rs.getInt(5);
 	            String Password = rs.getString(6);
+	            int Check_user = rs.getInt(7);
 
-	            UserModel u = new UserModel(id, first_name, last_name, Email, phone_no, Password);
+	            UserModel u = new UserModel(id, first_name, last_name, Email, phone_no, Password, Check_user);
 	            user.add(u);
 	        }
 

@@ -20,11 +20,13 @@ public class RegisterServlet extends HttpServlet {
 		String email= request.getParameter("email");
 		String phone_no= request.getParameter("phone_no");
 		String password= request.getParameter("password");
+		String check_user= request.getParameter("check_user");
 		
 		boolean isTrue;
 		
 		int phone = Integer.parseInt(phone_no);
-		isTrue = UserController.insertdata(first_name, last_name, email, phone, password);
+		int Check_user = 1;
+		isTrue = UserController.insertdata(first_name, last_name, email, phone, password, Check_user);
 		
 		if(isTrue == true) {
 			String alertMessage = "Register Successful";

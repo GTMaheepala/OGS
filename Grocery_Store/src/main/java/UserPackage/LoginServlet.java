@@ -28,8 +28,30 @@ public class LoginServlet extends HttpServlet {
 		request.setAttribute("userlogin", userlogin);
 			
 			if(userlogin != null && !userlogin.isEmpty()) {
-				String alertMessage = "Login Successful";
-				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/index.jsp'</script>");
+//				String alertMessage = "Login Successful";
+//				response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/index.jsp'</script>");
+				UserModel loggedInUser = userlogin.get(0);
+			    int role = loggedInUser.getCheck_user();
+
+			    request.getSession().setAttribute("email", loggedInUser.getEmail());
+
+			    if (role == 3) {
+			        // Admin or recruitment manager
+//			        response.sendRedirect("Com/dashboard.jsp");
+			    	String alertMessage = "Login Successful";
+					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/a_dashboard.jsp'</script>");
+			    } 
+			    else if(role == 2){
+//			    	response.sendRedirect("Com/dashboard.jsp");
+			    	String alertMessage = "Login Successful";
+					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/e_dashboard.jsp'</script>");
+			    }
+			    else {
+			        // Regular user
+//			        response.sendRedirect("Com/index.jsp");
+			    	String alertMessage = "Login Successful";
+					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/index.jsp'</script>");
+			    }
 			}
 			
 			else {
