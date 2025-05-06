@@ -168,5 +168,29 @@ public class UserController {
 		}
 		return user;
 	}
+	
+	//Delete Data
+	public static boolean deleteAccount(String id) {
+		int convID = Integer.parseInt(id);
+		try {
+			//DB CONNECTION CALL
+			con = DB_Connection.getConnection();
+			stmt = con.createStatement();
+			
+			String sql = "delete from user where id='"+convID+"'";
+			
+			int rs = stmt.executeUpdate(sql);
+			if(rs > 0) {
+				isSuccess = true;
+			}
+			else {
+				isSuccess = false;
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return isSuccess;
+	}
 
 }
