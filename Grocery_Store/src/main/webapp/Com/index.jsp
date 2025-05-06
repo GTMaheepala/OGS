@@ -21,8 +21,13 @@
             <li><a href="index.jsp" class="active">Home</a></li>
             <li><a href="store.jsp">Store</a></li>
             <li><a href="aboutus.jsp">About Us</a></li>
-            <li><a href="contactus.jsp">Contact Us</a></li>
-            <li><a href="login.jsp"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
+            <li><a href="profile.jsp">Contact Us</a></li>
+            <%
+    		Object user = session.getAttribute("user");
+    		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";
+			%>
+			<li><a href="<%= profileLink %>"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
+
             <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>
             <!-- <li><a href="#" onclick="toggleCartPanel()">Cart 🛒</a></li> -->
           </ul>

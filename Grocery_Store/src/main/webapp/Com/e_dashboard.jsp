@@ -28,7 +28,11 @@
     </ul>
     <div class="profile-section">
       <ul>
-        <a href="employee_account.php"><li><i class="fas fa-user"></i> Profile</li></a>
+        <%
+   		Object user = session.getAttribute("user");
+   		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";
+		%>
+        <a href="<%= profileLink %>"><li><i class="fas fa-user"></i> Profile</li></a>
         <a href="dashboard_Paymengt.php"><li><i class="fas fa-credit-card"></i> Payment</li></a>
         <a href="dashboard_more_info.php"><li><i class="fas fa-info-circle"></i> More Info</li></a>
         <a href="logout.php"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>

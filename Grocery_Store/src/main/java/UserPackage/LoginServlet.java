@@ -33,6 +33,7 @@ public class LoginServlet extends HttpServlet {
 				UserModel loggedInUser = userlogin.get(0);
 			    int role = loggedInUser.getCheck_user();
 
+			    request.getSession().setAttribute("user", loggedInUser);
 			    request.getSession().setAttribute("email", loggedInUser.getEmail());
 
 			    if (role == 3) {
