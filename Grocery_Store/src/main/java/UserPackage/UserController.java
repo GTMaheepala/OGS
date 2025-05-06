@@ -106,6 +106,67 @@ public class UserController {
 		}
 		return user;
 	}
+	
+	
+	//User Profile Update
+	public static boolean updateprofile(int id, String first_name, String last_name, String email, int phone_no, String password, int check_user) {
+		try {
+			//DB CONNECTION CALL
+			con = DB_Connection.getConnection();
+			stmt = con.createStatement();
+			
+			//sql query
+			String sql = "update user set first_name='"+first_name+"', last_name='"+last_name+"', email='"+email+"', phone_no='"+phone_no+"',password='"+password+"'"
+					+"where id ='"+id+"'";
+			
+			int rs = stmt.executeUpdate(sql);
+			
+			if(rs > 0) {
+				isSuccess = true;
+			}
+			else {
+				isSuccess = false;
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return isSuccess;
+	}
 
+	//Get by ID
+	public static List<UserModel> getById (String Id){
+		int convertedID = Integer.parseInt(Id);
+		
+		ArrayList <UserModel> user = new ArrayList<>();
+		
+		try {
+			//DB CONNECTION CALL
+			con = DB_Connection.getConnection();
+			stmt = con.createStatement();
+			
+			//Query
+			String sql = "select * from user where id '"+convertedID+"'";
+			
+			rs = stmt.executeQuery(sql);
+			
+			while(rs.next()) {
+				int id = rs.getInt(1);
+	            String first_name = rs.getString(2);
+	            String last_name = rs.getString(3);
+	            String email = rs.getString(4);
+	            int phone_no = rs.getInt(5);
+	            String password = rs.getString(6);
+	            int Check_user = rs.getInt(7);
+	            
+	            UserModel u = new UserModel(id, first_name, last_name, email, phone_no, password, Check_user);
+	            user.add(u);
+			}
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
 
 }

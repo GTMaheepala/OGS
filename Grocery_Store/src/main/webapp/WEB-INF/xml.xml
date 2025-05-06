@@ -51,6 +51,18 @@
 	    <servlet-name>LogoutServlet</servlet-name>
 	    <url-pattern>/LogoutServlet</url-pattern>
 	</servlet-mapping>-->
+	
+	
+	<!-- profile Update servlet -->
+     <servlet>
+     	<servlet-name>UpdateProfileServlet</servlet-name>
+     	<servlet-class>UserPackage.UpdateProfileServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>UpdateProfileServlet</servlet-name>
+     	<url-pattern>/UpdateProfileServlet</url-pattern>
+     </servlet-mapping>
 
 
 </web-app>
