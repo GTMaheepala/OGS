@@ -24,6 +24,10 @@
 			<input type="hidden" name="id" value="${user.id}"/>
 			<button>Delete</button>
 		</form>
+		
+		<form id="logoutForm" action="../LogoutServlet" method="get">
+    		<button type="submit">Logout</button>
+		</form>
 	
 	<script>../js/profile.js</script>
 	
