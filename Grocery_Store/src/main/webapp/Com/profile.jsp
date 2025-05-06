@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>User Profile</title>
+<style>h1{front:bolt}</style>
 </head>
 <body>
 <h1>User Profile</h1>
