@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Upadte Profile</title>
+<link rel="stylesheet" href="../css/update-profile.css">
 </head>
 <body>
 <%
@@ -17,7 +18,12 @@
 	String check_user = request.getParameter("check_user");
 %>
 
+
 	<form action="../UpdateProfileServlet" method="post">
+	<h2 class="form-title">Update Profile</h2>
+	<div class="top-bar">
+		<button id="backBtn">← Back</button>
+	</div>
 		<table>
 			<tr>
 				<td>ID:</td>
@@ -48,5 +54,7 @@
 			</tr>
 		</table>
 	</form>
+	
+	<script src="../js/update-profile.js"></script>
 </body>
 </html>
