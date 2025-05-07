@@ -75,6 +75,38 @@
      	<servlet-name>AccountDeleteServlet</servlet-name>
      	<url-pattern>/AccountDeleteServlet</url-pattern>
      </servlet-mapping>
+     
+     
+     <!-- Get All servlet -->
+     <servlet>
+     	<servlet-name>UserGetAllServlet</servlet-name>
+     	<servlet-class>UserPackage.UserGetAllServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>UserGetAllServlet</servlet-name>
+     	<url-pattern>/UserGetAllServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <!-- Admin package -->
+     <servlet>
+    	<servlet-name>UserGetAllDataServlet</servlet-name>
+    	<servlet-class>UserPackage.UserGetAllDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UserGetAllDataServlet</servlet-name>
+	    <url-pattern>/GetUsers</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <servlet-name>UserUpdateServlet</servlet-name>
+	    <servlet-class>UserPackage.UserUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UserUpdateServlet</servlet-name>
+	    <url-pattern>/UpdateUser</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

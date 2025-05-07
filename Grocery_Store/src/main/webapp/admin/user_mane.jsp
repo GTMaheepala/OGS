@@ -1,17 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>User Management - TheFreshMart</title>
-    <link rel="stylesheet" href="../css/user_mane.css">
+   <!--  <link rel="stylesheet" href="../css/user_mane.css">
     <link rel="stylesheet" href="../css/e_dashboard.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">-->
 </head>
 <body>
-<!-- Sidebar Navigation -->
+<!-- Sidebar Navigation 
   <div class="sidebar">
     <a href="../Com/index.jsp">
         <img class="logo" src="../images/logo_GS.png">
@@ -51,7 +52,7 @@
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search users...">
             </div>
-        </div>
+        </div>-->
 
         <div class="user-table-container">
             <table class="user-table">
@@ -63,52 +64,32 @@
                         <th>Email</th>
                         <th>Phone Number</th>
                         <th>Password</th>
+
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
+                	<c:forEach var="user" items="${allUsers}">
                     <tr>
-                        <td>USR001</td>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>+1 234-567-8901</td>
-                        <td>••••••••</td>
-                        <td class="action-buttons">
+                        <td>${user.id}</td>
+                        <td>${user.first_name}</td>
+                        <td>${user.last_name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.phone_no}</td>
+                        <td>${user.password}</td>
+
+                        <!--  <td class="action-buttons">
                             <button class="edit-btn"><i class="fas fa-edit"></i></button>
                             <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                        </td>
+                        </td>-->
                     </tr>
-                    <tr>
-                        <td>USR002</td>
-                        <td>Jane</td>
-                        <td>Smith</td>
-                        <td>jane.smith@example.com</td>
-                        <td>+1 234-567-8902</td>
-                        <td>••••••••</td>
-                        <td class="action-buttons">
-                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
-                            <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>USR003</td>
-                        <td>Mike</td>
-                        <td>Johnson</td>
-                        <td>mike.johnson@example.com</td>
-                        <td>+1 234-567-8903</td>
-                        <td>••••••••</td>
-                        <td class="action-buttons">
-                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
-                            <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                        </td>
-                    </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </div>
     </div>
 
-    <!-- Add User Modal -->
+    <!-- Add User Modal 
     <div class="modal" id="addUserModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -144,8 +125,8 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>-->
 
-    <script src="../js/user_mane.js"></script>
+    <!-- <script src="../js/user_mane.js"></script> -->
 </body>
 </html>
