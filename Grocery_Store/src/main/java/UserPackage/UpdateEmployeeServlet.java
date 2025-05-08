@@ -1,6 +1,7 @@
 package UserPackage;
 
 import java.io.IOException;
+
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -10,14 +11,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-@WebServlet("/UpdateProfileServlet")
-public class UpdateProfileServlet extends HttpServlet {
+@WebServlet("/UpdateEmployeeServlet")
+public class UpdateEmployeeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 	}
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id= request.getParameter("id");
@@ -32,18 +33,19 @@ public class UpdateProfileServlet extends HttpServlet {
 		
 		int Id = Integer.parseInt(id);
 		int phone = Integer.parseInt(phone_no);
+		int checkuser = Integer.parseInt(request.getParameter("check_user"));
 		
-		isTrue = UserController.updateprofile(Id, first_name, last_name, email, phone, password, phone);
+		isTrue = UserController.updateprofile(Id, first_name, last_name, email, phone, password,checkuser);
 		
 		if(isTrue == true) {
 			List<UserModel> userdetails = UserController.getById(id);
 			request.setAttribute("userdetails", userdetails);
 			
 			String alertMessage = "Data Update Successful";
-			response.getWriter().println("<script> alert('"+alertMessage+"'); window.location.href='Com/login.jsp'</script>");
+			response.getWriter().println("<script> alert('"+alertMessage+"'); window.location.href='EmployeeGetAllServlet'</script>");
 		}
 		else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("Com/profile.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("EmployeeGetAllServlet");
 			dis2.forward(request, response);
 		}
 	}

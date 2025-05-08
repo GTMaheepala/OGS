@@ -107,6 +107,28 @@
 	    <servlet-name>UserUpdateServlet</servlet-name>
 	    <url-pattern>/UpdateUser</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- User package -->
+     <servlet>
+    	<servlet-name>UpdateEmployeeServlet</servlet-name>
+    	<servlet-class>UserPackage.UpdateEmployeeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UpdateEmployeeServlet</servlet-name>
+	    <url-pattern>/UpdateEmployeeServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- User package -->
+     <servlet>
+    	<servlet-name>AccountDeleteEmployeeServlet</servlet-name>
+    	<servlet-class>UserPackage.AccountDeleteEmployeeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AccountDeleteEmployeeServlet</servlet-name>
+	    <url-pattern>/AccountDeleteEmployeeServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

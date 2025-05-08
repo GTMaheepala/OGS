@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 			    request.getSession().setAttribute("user", loggedInUser);
 			    request.getSession().setAttribute("email", loggedInUser.getEmail());
 
-			    if (role == 3) {
+			    if (role == 4) {
 			        // Admin or recruitment manager
 //			        response.sendRedirect("Com/dashboard.jsp");
 			    	String alertMessage = "Login Successful";
@@ -44,6 +44,11 @@ public class LoginServlet extends HttpServlet {
 					response.sendRedirect("UserGetAllServlet");
 					response.sendRedirect("EmployeeGetAllServlet");
 			    } 
+			    else if(role == 3){
+//			    	response.sendRedirect("Com/dashboard.jsp");
+			    	String alertMessage = "Login Successful";
+					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/e_dashboard.jsp'</script>");
+			    }
 			    else if(role == 2){
 //			    	response.sendRedirect("Com/dashboard.jsp");
 			    	String alertMessage = "Login Successful";

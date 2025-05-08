@@ -1,6 +1,6 @@
 /**
  * 
- */
+ 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize elements
     const addEmployeeBtn = document.getElementById('addEmployeeBtn');
@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const addEmployeeForm = document.getElementById('addEmployeeForm');
     const searchInput = document.querySelector('.search-box input');
     const positionFilter = document.getElementById('positionFilter');
-    const employeeTable = document.querySelector('.employee-table tbody');
+    const employeeTable = document.querySelector('.employee-table tbody');*/
 
     // Show modal
     addEmployeeBtn.addEventListener('click', () => {
         addEmployeeModal.style.display = 'block';
-    });
+    });/*
 
     // Close modal
     function closeModal() {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showAlert('Employee deleted successfully!');
             }
         }
-    });
+    });*/
 
     // Search functionality
     searchInput.addEventListener('input', function() {
@@ -162,4 +162,3 @@ document.addEventListener('DOMContentLoaded', function() {
             alertDiv.remove();
         });
     }
-}); 

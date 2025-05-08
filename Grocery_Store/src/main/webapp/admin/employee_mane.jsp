@@ -42,9 +42,10 @@
   <div class="employee-container">
     <div class="employee-header">
       <h1><i class="fas fa-users-cog"></i> Employee Management</h1>
-      <button class="add-employee-btn" id="addEmployeeBtn">
-        <i class="fas fa-user-plus"></i> Add New Employee
-      </button>
+      <button class="add-employee-btn" onclick="window.location.href='admin/addEmployee.jsp'">
+  		<i class="fas fa-user-plus"></i> Add New Employee
+	  </button>
+
     </div>
 
     <div class="search-filter-section">
@@ -100,62 +101,22 @@
 		      </c:otherwise>
 		    </c:choose>
 		    <td class="action-buttons">
-		      <button class="edit-btn"><i class="fas fa-edit"></i></button>
+		    <a href="admin/editEmployee.jsp?id=${user.id}&first_name=${user.first_name}&last_name=${user.last_name}&email=${user.email}&phone_no=${user.phone_no}&password=${user.password}&check_user=${user.check_user}">
+		      <button class="edit-btn">
+  				<i class="fas fa-edit"></i>
+			  </button>
+			  </a>
+		      <form action="AccountDeleteEmployeeServlet" method="post">
+		      <input type="hidden" name="id" value="${user.id}"/>
 		      <button class="delete-btn"><i class="fas fa-trash"></i></button>
+		      </form>
 		    </td>
 		  </tr>
 		</c:forEach>
         </tbody>
       </table>
     </div>
-  </div>
-
-  <!-- Add Employee Modal -->
-  <div class="modal" id="addEmployeeModal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2><i class="fas fa-user-plus"></i> Add New Employee</h2>
-        <button class="close-modal"><i class="fas fa-times"></i></button>
-      </div>
-      <form id="addEmployeeForm">
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" required>
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" required>
-          </div>
-          <div class="form-group">
-            <label for="position">Position</label>
-            <select id="position" required>
-              <option value="">Select Position</option>
-              <option value="manager">Manager</option>
-              <option value="store_manager">Store Manager</option>
-              <option value="delivery_partner">Delivery Partner</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" required>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="cancel-btn">Cancel</button>
-          <button type="submit" class="save-btn">Save Employee</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  </div> 
 
   <script src="js/employee_mane.js"></script>
 </body>
