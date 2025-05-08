@@ -41,8 +41,8 @@ public class LoginServlet extends HttpServlet {
 //			        response.sendRedirect("Com/dashboard.jsp");
 			    	String alertMessage = "Login Successful";
 					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/a_dashboard.jsp'</script>");
-					response.sendRedirect("UserGetAllServlet");
-					response.sendRedirect("EmployeeGetAllServlet");
+//					response.sendRedirect("UserGetAllServlet");
+//					response.sendRedirect("EmployeeGetAllServlet");
 			    } 
 			    else if(role == 3){
 //			    	response.sendRedirect("Com/dashboard.jsp");

@@ -28,7 +28,7 @@ public class AddEmployeeServlet extends HttpServlet {
 			response.getWriter().println("<script> alert('"+alertMessage+"'); window.location.href='EmployeeGetAllServlet'</script>");
 		}
 		else {
-			RequestDispatcher dis2 = request.getRequestDispatcher("admin/employee_mane.jsp");
+			RequestDispatcher dis2 = request.getRequestDispatcher("EmployeeGetAllServlet");
 			dis2.forward(request, response);
 		}
 	}

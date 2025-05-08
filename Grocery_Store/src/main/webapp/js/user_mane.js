@@ -1,6 +1,6 @@
 /**
  * 
- */
+ 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize elements
     const addUserBtn = document.getElementById('addUserBtn');
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             row.remove();
             showAlert('User deleted successfully!', 'success');
         }
-    };
+    };*/
 
     // Add event listeners to existing buttons
     document.querySelectorAll('.edit-btn').forEach(btn => {
@@ -179,4 +179,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert.remove();
         });
     };
-});
+

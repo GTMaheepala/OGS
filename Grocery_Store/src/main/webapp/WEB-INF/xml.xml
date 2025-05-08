@@ -129,6 +129,36 @@
 	    <servlet-name>AccountDeleteEmployeeServlet</servlet-name>
 	    <url-pattern>/AccountDeleteEmployeeServlet</url-pattern>
 	</servlet-mapping>
+	
+	<!-- User package -->
+     <servlet>
+    	<servlet-name>AddUserServlet</servlet-name>
+    	<servlet-class>UserPackage.AddUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AddUserServlet</servlet-name>
+	    <url-pattern>/AddUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- User package -->
+     <servlet>
+    	<servlet-name>AccountDeleteUserServlet</servlet-name>
+    	<servlet-class>UserPackage.AccountDeleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AccountDeleteUserServlet</servlet-name>
+	    <url-pattern>/AccountDeleteUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- User package -->
+     <servlet>
+    	<servlet-name>UpdateUserServlet</servlet-name>
+    	<servlet-class>UserPackage.UpdateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UpdateUserServlet</servlet-name>
+	    <url-pattern>/UpdateUserServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

@@ -42,7 +42,7 @@
     <div class="user-container">
         <div class="user-header">
             <h1><i class="fas fa-users"></i> User Management</h1>
-            <button class="add-user-btn" id="addUserBtn">
+            <button class="add-user-btn" onclick="window.location.href='admin/addUser.jsp'">
                 <i class="fas fa-user-plus"></i> Add New User
             </button>
         </div>
@@ -79,51 +79,20 @@
                         <td>${user.password}</td>
 
                         <td class="action-buttons">
-                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
-                            <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            <a href="admin/editUser.jsp?id=${user.id}&first_name=${user.first_name}&last_name=${user.last_name}&email=${user.email}&phone_no=${user.phone_no}&password=${user.password}&check_user=${user.check_user}">
+						      <button class="edit-btn">
+				  				<i class="fas fa-edit"></i>
+							  </button>
+							</a>
+                            <form action="AccountDeleteUserServlet" method="post">
+		      					<input type="hidden" name="id" value="${user.id}"/>
+		      					<button class="delete-btn"><i class="fas fa-trash"></i></button>
+		      				</form>
                         </td>
                     </tr>
                     </c:forEach>
                 </tbody>
             </table>
-        </div>
-    </div>
-
-    <!-- Add User Modal -->
-    <div class="modal" id="addUserModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2><i class="fas fa-user-plus"></i> Add New User</h2>
-                <button class="close-modal"><i class="fas fa-times"></i></button>
-            </div>
-            <form id="addUserForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="cancel-btn">Cancel</button>
-                    <button type="submit" class="save-btn">Save User</button>
-                </div>
-            </form>
         </div>
     </div>
 
