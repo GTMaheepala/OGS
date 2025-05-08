@@ -94,10 +94,30 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    #backBtn{
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#backBtn {
+  background: #1e3c60;
+  color: white;
+}
+
+#backBtn:hover {
+  background: #5a6268;
+}
   </style>
 </head>
 <body>
-<!-- Add Employee Modal -->
+<!-- Add User Modal -->
+<div class="top-bar">
+	<button id="backBtn">← Back</button>
+</div>
 <div class="add-employee-container">
     <div class="header">
       <i class="fas fa-user-plus fa-lg"></i>
@@ -145,5 +165,6 @@
       </div>
     </form>
   </div>
+  <script src="../js/update-profile.js"></script>
 </body>
 </html>

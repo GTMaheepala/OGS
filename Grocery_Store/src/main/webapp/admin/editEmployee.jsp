@@ -104,7 +104,7 @@
 }
 
 #backBtn {
-  background: #6c757d;
+  background: #1e3c60;
   color: white;
 }
 

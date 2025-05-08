@@ -19,12 +19,14 @@
       padding: 2rem;
     }
     .add-employee-container {
-      max-width: 800px;
+      max-width: 1000px;
+      max-higth: 900px;
       margin: 0 auto;
       background: white;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      
     }
     .header {
       background: linear-gradient(135deg, #162938, #1e3c60);
@@ -32,7 +34,7 @@
       padding: 2rem;
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
     }
     .header h1 {
       font-size: 1.5rem;
@@ -42,16 +44,16 @@
     }
     .form-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+      gap: 2.5rem;
     }
     .form-group {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 1.5rem;
     }
     .form-group label {
-      font-weight: 600;
+      font-weight: 900;
       color: #162938;
     }
     .form-group input,
@@ -94,10 +96,30 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    #backBtn{
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#backBtn {
+  background: #1e3c60;
+  color: white;
+}
+
+#backBtn:hover {
+  background: #5a6268;
+}
   </style>
 </head>
 <body>
   <!-- Add Employee Modal -->
+  <div class="top-bar">
+	<button id="backBtn">← Back</button>
+</div>
 <div class="add-employee-container">
     <div class="header">
       <i class="fas fa-user-plus fa-lg"></i>
@@ -144,5 +166,6 @@
       </div>
     </form>
   </div>
+  <script src="../js/update-profile.js"></script>
 </body>
 </html>

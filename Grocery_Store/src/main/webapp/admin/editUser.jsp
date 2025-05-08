@@ -104,7 +104,7 @@
 }
 
 #backBtn {
-  background: #6c757d;
+  background: #1e3c60;
   color: white;
 }
 
@@ -126,9 +126,9 @@
 %>
 <!-- Edit Employee Modal -->
 <div class="top-bar">
-		<button id="backBtn">← Back</button>
-	</div>
-<div class="add-employee-container">
+	<button id="backBtn">← Back</button>
+</div>
+	<div class="add-employee-container">
     <div class="header">
       <i class="fas fa-user-plus fa-lg"></i>
       <h1>Add New Employee</h1>

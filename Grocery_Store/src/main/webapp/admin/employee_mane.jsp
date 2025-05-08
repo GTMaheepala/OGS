@@ -34,7 +34,7 @@
         <a href="<%= profileLink %>"><li><i class="fas fa-user"></i> Profile</li></a>
         <a href="dashboard_Paymengt.php"><li><i class="fas fa-credit-card"></i> Payment</li></a>
         <a href="dashboard_more_info.php"><li><i class="fas fa-info-circle"></i> More Info</li></a>
-        <a href="logout.php"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
+        <a href="Com/login.jsp" onclick="if(confirm('Are you sure you want to logout?')) { document.getElementById('logoutForm').submit(); } return false;"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
       </ul>
     </div>
   </div>
