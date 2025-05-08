@@ -1,34 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Employee Management - TheFreshMart</title>
-  <link rel="stylesheet" href="../css/employee_mane.css"/>
-  <link rel="stylesheet" href="../css/e_dashboard.css"/>
+  <link rel="stylesheet" href="css/employee_mane.css"/>
+  <link rel="stylesheet" href="css/e_dashboard.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <!-- Sidebar Navigation -->
   <div class="sidebar">
-    <a href="../Com/index.jsp">
-        <img class="logo" src="../images/logo_GS.png">
+    <a href="Com/index.jsp">
+        <img class="logo" src="images/logo_GS.png">
     </a>
     <h2>Employee Panel</h2>
     <ul>
-      <a href="../Com/a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
-      <a href="../Com/aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
-      <a href="../Com/estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
-      <a href="../Com/o&i.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
-      <a href="../Com/contactus.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
+      <a href="Com/a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
+      <a href="Com/aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
+      <a href="Com/estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
+      <a href="Com/o&i.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
+      <a href="Com/contactus.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
     </ul>
     <div class="profile-section">
       <ul>
         <%
    		Object user = session.getAttribute("user");
-   		String profileLink = (user != null) ? "../Com/profile.jsp" : "../Com/login.jsp";
+   		String profileLink = (user != null) ? "Com/profile.jsp" : "Com/login.jsp";
 		%>
         <a href="<%= profileLink %>"><li><i class="fas fa-user"></i> Profile</li></a>
         <a href="dashboard_Paymengt.php"><li><i class="fas fa-credit-card"></i> Payment</li></a>
@@ -54,9 +55,9 @@
       <div class="filter-box">
         <select id="positionFilter">
           <option value="">All Positions</option>
-          <option value="manager">Manager</option>
+          <option value="admin">Admin</option>
           <option value="store_manager">Store Manager</option>
-          <option value="delivery_partner">Delivery Partner</option>
+          <option value="delivery_manager">Delivery Manager</option>
         </select>
       </div>
     </div>
@@ -70,51 +71,40 @@
             <th>Last Name</th>
             <th>Email</th>
             <th>Phone Number</th>
-            <th>Position</th>
             <th>Password</th>
+            <th>Position</th>
             <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>EMP001</td>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john.doe@freshmart.com</td>
-            <td>+1 234-567-8901</td>
-            <td><span class="position-badge manager">Manager</span></td>
-            <td>••••••••</td>
-            <td class="action-buttons">
-              <button class="edit-btn"><i class="fas fa-edit"></i></button>
-              <button class="delete-btn"><i class="fas fa-trash"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td>EMP002</td>
-            <td>Jane</td>
-            <td>Smith</td>
-            <td>jane.smith@freshmart.com</td>
-            <td>+1 234-567-8902</td>
-            <td><span class="position-badge store-manager">Store Manager</span></td>
-            <td>••••••••</td>
-            <td class="action-buttons">
-              <button class="edit-btn"><i class="fas fa-edit"></i></button>
-              <button class="delete-btn"><i class="fas fa-trash"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <td>EMP003</td>
-            <td>Mike</td>
-            <td>Johnson</td>
-            <td>mike.johnson@freshmart.com</td>
-            <td>+1 234-567-8903</td>
-            <td><span class="position-badge delivery-partner">Delivery Partner</span></td>
-            <td>••••••••</td>
-            <td class="action-buttons">
-              <button class="edit-btn"><i class="fas fa-edit"></i></button>
-              <button class="delete-btn"><i class="fas fa-trash"></i></button>
-            </td>
-          </tr>
+        <c:forEach var="user" items="${allEmployees}">
+		  <tr>
+		    <td>${user.id}</td>
+		    <td>${user.first_name}</td>
+		    <td>${user.last_name}</td>
+		    <td>${user.email}</td>
+		    <td>${user.phone_no}</td>
+		    <td>${user.password}</td>
+		    <c:choose>
+		      <c:when test="${user.check_user == 2}">
+		        <td><span class="position-badge manager">Store Manager</span></td>
+		      </c:when>
+		      <c:when test="${user.check_user == 3}">
+		        <td><span class="position-badge manager">Delivery Manager</span></td>
+		      </c:when>
+		      <c:when test="${user.check_user == 4}">
+		        <td><span class="position-badge manager">Admin</span></td>
+		      </c:when>
+		      <c:otherwise>
+		        <td><span class="position-badge unknown">Unknown</span></td>
+		      </c:otherwise>
+		    </c:choose>
+		    <td class="action-buttons">
+		      <button class="edit-btn"><i class="fas fa-edit"></i></button>
+		      <button class="delete-btn"><i class="fas fa-trash"></i></button>
+		    </td>
+		  </tr>
+		</c:forEach>
         </tbody>
       </table>
     </div>
@@ -167,6 +157,6 @@
     </div>
   </div>
 
-  <script src="../js/employee_mane.js"></script>
+  <script src="js/employee_mane.js"></script>
 </body>
 </html>

@@ -80,12 +80,12 @@
             <h3>Inventory Management</h3>
             <p>Manage stock levels</p>
           </div></a>
-      <a href="../admin/user_mane.jsp">
+      <a href="../UserGetAllServlet">
       <div class="card">
         <h3>User Account Manage</h3>
         <p>User Account List</p>
       </div></a>
-      <a href="../admin/employee_mane.jsp">
+      <a href="../EmployeeGetAllServlet">
       <div class="card">
         <h3>Employee Manage</h3>
         <p>Employee List</p>

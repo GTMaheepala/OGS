@@ -9,22 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/UserGetAllServlet")
-public class UserGetAllServlet extends HttpServlet {
+@WebServlet("/EmployeeGetAllServlet")
+public class EmployeeGetAllServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List <UserModel> allUsers = UserController.getAllUser();
-		request.setAttribute("allUsers", allUsers);
+		List <UserModel> allEmployees = UserController.getAllEmployee();
+		request.setAttribute("allEmployees", allEmployees);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("admin/user_mane.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("admin/employee_mane.jsp");
 		
 		dispatcher.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
-		
 	}
 
 }

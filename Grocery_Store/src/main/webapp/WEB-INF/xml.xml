@@ -96,7 +96,7 @@
 	</servlet>
 	<servlet-mapping>
 	    <servlet-name>UserGetAllDataServlet</servlet-name>
-	    <url-pattern>/GetUsers</url-pattern>
+	    <url-pattern>/user_management</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

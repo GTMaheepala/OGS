@@ -193,7 +193,7 @@ public class UserController {
 		return isSuccess;
 	}
 	
-	//Get All Data
+	//Get All Data User
 	public static List<UserModel> getAllUser (){
 		ArrayList <UserModel> users = new ArrayList<>();
 		
@@ -203,7 +203,7 @@ public class UserController {
 			stmt = con.createStatement();
 			
 			//Query
-			String sql = "select * from user";
+			String sql = "select * from user where check_user = 1";
 			
 			rs = stmt.executeQuery(sql);
 			
@@ -226,5 +226,40 @@ public class UserController {
 		return users;
 		
 	}
+	
+	
+	//Get All Data Employee
+		public static List<UserModel> getAllEmployee (){
+			ArrayList <UserModel> employees = new ArrayList<>();
+			
+			try {
+				//DB CONNECTION CALL
+				con = DB_Connection.getConnection();
+				stmt = con.createStatement();
+				
+				//Query
+				String sql = "select * from user where check_user != 1";
+				
+				rs = stmt.executeQuery(sql);
+				
+				while(rs.next()) {
+					int id = rs.getInt(1);
+		            String first_name = rs.getString(2);
+		            String last_name = rs.getString(3);
+		            String email = rs.getString(4);
+		            int phone_no = rs.getInt(5);
+		            String password = rs.getString(6);
+		            int check_user = rs.getInt(7);
+		            
+		            UserModel m = new UserModel(id, first_name, last_name, email, phone_no, password, check_user);
+		            employees.add(m);
+				}
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+			return employees;
+			
+		}
 
 }
