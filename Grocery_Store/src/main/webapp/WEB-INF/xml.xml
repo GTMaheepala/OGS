@@ -159,6 +159,28 @@
 	    <servlet-name>UpdateUserServlet</servlet-name>
 	    <url-pattern>/UpdateUserServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- Thisara package -->
+     <servlet>
+    	<servlet-name>InsertDServlet</servlet-name>
+    	<servlet-class>thisara.InsertDServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>InsertDServlet</servlet-name>
+	    <url-pattern>/InsertDServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Thisara package -->
+     <servlet>
+    	<servlet-name>deliveryGetAllDataServlet</servlet-name>
+    	<servlet-class>thisara.deliveryGetAllDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>deliveryGetAllDataServlet</servlet-name>
+	    <url-pattern>/deliveryGetAllDataServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>
