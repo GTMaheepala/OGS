@@ -18,7 +18,7 @@
     <a href="index.jsp">
         <img class="logo" src="../images/logo_GS.png">
     </a>
-    <h2>Employee Panel</h2>
+    <h2>Admin Panel</h2>
     <ul>
       <a href="a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
       <a href="aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
@@ -43,7 +43,7 @@
   <!-- Main Dashboard Content -->
   <div class="main-content">
     <header>
-      <h1>Welcome, Employee!</h1>
+      <h1>Welcome, Admin!</h1>
       <form id="logoutForm" action="../LogoutServlet" method="get">
     		<button class="logout-btn" type="submit">Logout</button>
 		</form>
@@ -84,6 +84,11 @@
       <div class="card">
         <h3>User Account Manage</h3>
         <p>User Account List</p>
+      </div></a>
+      <a href="../EmployeeGetAllServlet">
+      <div class="card">
+        <h3>Employee Manage</h3>
+        <p>Employee List</p>
       </div></a>
       <a href="../EmployeeGetAllServlet">
       <div class="card">
