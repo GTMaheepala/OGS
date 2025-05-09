@@ -22,7 +22,7 @@ body {
 }
 
 .user-header {
-    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    background: linear-gradient(135deg, #162938, #1e3c60);
     color: white;
     padding: 2rem;
     display: flex;
@@ -108,7 +108,7 @@ body {
     padding: 1rem;
     text-align: left;
     font-weight: 600;
-    color: #6c5ce7;
+    color: #162938;
     border-bottom: 2px solid #e9ecef;
 }
 

@@ -4,8 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Employee - TheFreshMart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
     * {
       margin: 0;
@@ -19,14 +22,12 @@
       padding: 2rem;
     }
     .add-employee-container {
-      max-width: 1000px;
-      max-higth: 900px;
+      max-width: 800px;
       margin: 0 auto;
       background: white;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      
     }
     .header {
       background: linear-gradient(135deg, #162938, #1e3c60);
@@ -34,34 +35,35 @@
       padding: 2rem;
       display: flex;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
     }
     .header h1 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .form-section {
       padding: 2rem;
     }
     .form-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
-      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
     .form-group {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 0.5rem;
     }
     .form-group label {
-      font-weight: 900;
+      font-weight: 600;
       color: #162938;
+      font-size:18px;
     }
     .form-group input,
     .form-group select {
       padding: 0.8rem;
       border: 2px solid #e9ecef;
       border-radius: 10px;
-      font-size: 0.95rem;
+      font-size: 1.15rem;
       transition: all 0.3s ease;
     }
     .form-group input:focus,
@@ -113,6 +115,7 @@
 #backBtn:hover {
   background: #5a6268;
 }
+}
   </style>
 </head>
 <body>
@@ -126,7 +129,7 @@
       <h1>Add New Employee</h1>
     </div>
 
-    <form id="addEmployeeForm" action="/Grocery_Store/AddEmployeeServlet" method="POST">
+    <form class="form-section" id="addEmployeeForm" action="/Grocery_Store/AddEmployeeServlet" method="POST">
       <div class="form-grid">
         <div class="form-group">
             <label for="firstName">First Name</label>

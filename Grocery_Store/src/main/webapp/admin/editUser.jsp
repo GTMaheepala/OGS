@@ -4,8 +4,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit User - TheFreshMart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
     * {
       margin: 0;
@@ -35,7 +38,7 @@
       gap: 1rem;
     }
     .header h1 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     .form-section {
       padding: 2rem;
@@ -49,17 +52,19 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      margin-bottom:-2%;
     }
     .form-group label {
       font-weight: 600;
       color: #162938;
+      font-size:18px;
     }
     .form-group input,
     .form-group select {
       padding: 0.8rem;
       border: 2px solid #e9ecef;
       border-radius: 10px;
-      font-size: 0.95rem;
+      font-size: 1.15rem;
       transition: all 0.3s ease;
     }
     .form-group input:focus,
@@ -135,7 +140,7 @@
     </div>
     
 
-    <form id="addEmployeeForm" action="/Grocery_Store/UpdateUserServlet" method="POST">
+    <form class="form-section" id="addEmployeeForm" action="/Grocery_Store/UpdateUserServlet" method="POST">
       <div class="form-grid">
       <div class="form-group">
             <label for="firstName">ID</label>

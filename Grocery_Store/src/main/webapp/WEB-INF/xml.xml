@@ -181,6 +181,37 @@
 	    <servlet-name>deliveryGetAllDataServlet</servlet-name>
 	    <url-pattern>/deliveryGetAllDataServlet</url-pattern>
 	</servlet-mapping>
+	
+	<!-- Admin package -->
+     <servlet>
+    	<servlet-name>AddPromotionServlet</servlet-name>
+    	<servlet-class>AdminPackage.AddPromotionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AddPromotionServlet</servlet-name>
+	    <url-pattern>/AddPromotionServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Admin package -->
+     <servlet>
+    	<servlet-name>PromotionGetAllServlet</servlet-name>
+    	<servlet-class>AdminPackage.PromotionGetAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>PromotionGetAllServlet</servlet-name>
+	    <url-pattern>/PromotionGetAllServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Admin package -->
+     <servlet>
+    	<servlet-name>UpdatePromotionServlet</servlet-name>
+    	<servlet-class>AdminPackage.UpdatePromotionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UpdatePromotionServlet</servlet-name>
+	    <url-pattern>/UpdatePromotionServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

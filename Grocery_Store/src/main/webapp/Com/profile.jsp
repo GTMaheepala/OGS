@@ -50,7 +50,7 @@
 			<button id="editBtn" >Update</button>
 		</a>
 		
-		<form action="../AccountDeleteServlet" method="post">
+		<form action="../AccountDeleteServlet" method="post" onsubmit="return confirmDelete();">
 			<input type="hidden" name="id" value="${user.id}"/>
 			<button id="deleteBtn">Delete</button>
 		</form>
