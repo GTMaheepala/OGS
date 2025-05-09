@@ -89,7 +89,7 @@
      </servlet-mapping>
      
      
-     <!-- Admin package -->
+     <!-- Admin package 
      <servlet>
     	<servlet-name>UserGetAllDataServlet</servlet-name>
     	<servlet-class>UserPackage.UserGetAllDataServlet</servlet-class>
@@ -106,7 +106,7 @@
 	<servlet-mapping>
 	    <servlet-name>UserUpdateServlet</servlet-name>
 	    <url-pattern>/UpdateUser</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping>-->
 	
 	
 	<!-- User package -->
