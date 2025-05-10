@@ -31,7 +31,7 @@
 
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="/Grocery_Store/InsertServlet" method="POST">
+            <form action="<%= request.getContextPath() %>/RegisterServlet" method="POST">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>
