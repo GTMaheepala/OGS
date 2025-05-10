@@ -124,9 +124,9 @@ public class PromotionController {
 
 		        // SQL query
 		        String sql = "UPDATE promotions SET promo_code='" + promoCode + "', description='" + description + 
-		                     "', discount_type='" + discountType + "', value=" + value + 
-		                     ", valid_from='" + validFrom + "', valid_to='" + validTo + 
-		                     "', usage_limit=" + usageLimit + " WHERE promoId=" + id;
+		                     "', discount_type='" + discountType + "', value='" + value + 
+		                     "', valid_from='" + validFrom + "', valid_to='" + validTo + 
+		                     "', usage_limit='" + usageLimit + "'" +"WHERE id='" + id+"'";
 
 		        int rs = stmt.executeUpdate(sql);
 
@@ -140,6 +140,34 @@ public class PromotionController {
 		    }
 		    return isSuccess;
 		}
+		
+		
+		// Delete Promotion by ID
+				public static boolean deletePromotion(String id) {
+				    int promotionId = Integer.parseInt(id);
+				    boolean isSuccess = false;
+
+				    try {
+				        // DB CONNECTION CALL
+				        con = DB_Connection.getConnection();
+				        stmt = con.createStatement();
+
+				        // SQL DELETE query
+				        String sql = "DELETE FROM promotions WHERE id='" + promotionId + "'";
+
+				        int rs = stmt.executeUpdate(sql);
+
+				        if (rs > 0) {
+				            isSuccess = true;
+				        } else {
+				            isSuccess = false;
+				        }
+				    } catch (Exception e) {
+				        e.printStackTrace();
+				    }
+
+				    return isSuccess;
+				}
 
 
 

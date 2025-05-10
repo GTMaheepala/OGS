@@ -212,6 +212,17 @@
 	    <servlet-name>UpdatePromotionServlet</servlet-name>
 	    <url-pattern>/UpdatePromotionServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- Admin package -->
+     <servlet>
+    	<servlet-name>PromotionDeleteServlet</servlet-name>
+    	<servlet-class>AdminPackage.PromotionDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>PromotionDeleteServlet</servlet-name>
+	    <url-pattern>/PromotionDeleteServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

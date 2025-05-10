@@ -16,7 +16,7 @@
 </head>
 <body>
 <%
-    String id = request.getParameter("promoId");
+    String id = request.getParameter("id");
     String promo_code = request.getParameter("promo_code");
     String description = request.getParameter("description");
     String discount_type = request.getParameter("discount_type");
@@ -65,15 +65,15 @@
       </div>
       <div class="form-group">
         <label for="valid_from">Valid From</label>
-        <input type="date" id="valid_from" name="valid_from" value="<%=valid_from%>" required>
+        <input type="text" id="valid_from" name="valid_from" value="<%=valid_from%>" required>
       </div>
       <div class="form-group">
         <label for="valid_to">Valid To</label>
-        <input type="date" id="valid_to" name="valid_to" value="<%=valid_to%>" required>
+        <input type="text" id="valid_to" name="valid_to" value="<%=valid_to%>" required>
       </div>
       <div class="form-group">
         <label for="usage_limit">Usage Limit</label>
-        <input type="number" id="usage_limit" name="usage_limit" value="<%=usage_limit%>" required>
+        <input type="text" id="usage_limit" name="usage_limit" value="<%=usage_limit%>" required>
       </div>
     </div>
 

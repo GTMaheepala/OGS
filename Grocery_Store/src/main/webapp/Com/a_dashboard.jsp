@@ -90,9 +90,9 @@
         <h3>Employee Manage</h3>
         <p>Employee List</p>
       </div></a>
-      <a href="../EmployeeGetAllServlet">
+      <a href="../PromotionGetAllServlet">
       <div class="card">
-        <h3>Employee Manage</h3>
+        <h3>Promotion Manage</h3>
         <p>Employee List</p>
       </div></a>
     </section>
