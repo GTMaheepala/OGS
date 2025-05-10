@@ -20,7 +20,7 @@
         }
     </style>
       <!-- <img class="logo" src="images/logo_GS.png" alt="Logo image"> -->
-      <h1 class="name1">Grocery Store</h1>
+      <h1 class="name1">Grocery Store</h1> 
 
     <div class="wrapper">
         <span class="icon-close">
