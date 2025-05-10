@@ -53,7 +53,7 @@ public class PromotionController {
 		        Statement stmt = con.createStatement();
 
 		        // Query
-		        String sql = "SELECT * FROM promotions WHERE id = '" + promotionId + "'";
+		        String sql = "SELECT * FROM promotions WHERE promo_id = '" + promotionId + "'";
 
 		        ResultSet rs = stmt.executeQuery(sql);
 
@@ -115,7 +115,7 @@ public class PromotionController {
 		
 		// Update Promotion
 		public static boolean updatePromotion(int id, String promoCode, String description, String discountType, double value, String validFrom, String validTo, int usageLimit) {
-		    boolean isSuccess = false;
+		    
 
 		    try {
 		        // DB CONNECTION CALL
@@ -126,7 +126,7 @@ public class PromotionController {
 		        String sql = "UPDATE promotions SET promo_code='" + promoCode + "', description='" + description + 
 		                     "', discount_type='" + discountType + "', value='" + value + 
 		                     "', valid_from='" + validFrom + "', valid_to='" + validTo + 
-		                     "', usage_limit='" + usageLimit + "'" +"WHERE id='" + id+"'";
+		                     "', usage_limit='" + usageLimit + "'" +"WHERE promo_id='" + id+"'";
 
 		        int rs = stmt.executeUpdate(sql);
 
@@ -153,7 +153,7 @@ public class PromotionController {
 				        stmt = con.createStatement();
 
 				        // SQL DELETE query
-				        String sql = "DELETE FROM promotions WHERE id='" + promotionId + "'";
+				        String sql = "DELETE FROM promotions WHERE promo_id='" + promotionId + "'";
 
 				        int rs = stmt.executeUpdate(sql);
 

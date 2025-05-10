@@ -19,7 +19,7 @@ public class UpdatePromotionServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String id = request.getParameter("id");
+		String id = request.getParameter("promo_id");
 		String promo_code = request.getParameter("promo_code");
 		String description = request.getParameter("description");
 		String discount_type = request.getParameter("discount_type");

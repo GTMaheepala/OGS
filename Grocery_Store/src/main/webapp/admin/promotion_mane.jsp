@@ -88,11 +88,11 @@
             <td>${promotions.validTo}</td>
             <td>${promotions.usageLimit}</td>
             <td class="action-buttons">
-              <a href="admin/editPromotion.jsp?id=${promotions.promoId}&promoCode=${promotions.promoCode}&description=${promotions.description}&discountType=${promotions.discountType}&value=${promotions.value}&validFrom=${promotions.validFrom}&validTo=${promotions.validTo}&usageLimit=${promotions.usageLimit}">
+              <a href="admin/editPromotion.jsp?id=${promotions.promoId}&promo_code=${promotions.promoCode}&description=${promotions.description}&discount_type=${promotions.discountType}&value=${promotions.value}&valid_from=${promotions.validFrom}&valid_to=${promotions.validTo}&usage_limit=${promotions.usageLimit}">
                 <button class="edit-btn"><i class="fas fa-edit"></i></button>
               </a>
               <form action="/Grocery_Store/PromotionDeleteServlet" method="post">
-                <input type="hidden" name="id" value="${promotions.promoId}" />
+                <input type="hidden" name="id" value="${promotions.promoId}"/>
                 <button class="delete-btn"><i class="fas fa-trash"></i></button>
               </form>
             </td>

@@ -165,7 +165,7 @@
 
       <div class="form-footer">
         <button type="reset" class="btn cancel-btn">Cancel</button>
-        <button type="submit" class="btn save-btn">Save Employee</button>
+        <button type="submit" class="btn save-btn">Add Employee</button>
       </div>
     </form>
   </div>
