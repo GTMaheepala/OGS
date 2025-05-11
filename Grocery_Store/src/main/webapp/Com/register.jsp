@@ -18,7 +18,7 @@
             background-size: cover;
             background-position: center;
         }
-    </style>
+    </style>   
       <!-- <img class="logo" src="images/logo_GS.png" alt="Logo image"> -->
       <h1 class="name1">Grocery Store</h1> 
 
