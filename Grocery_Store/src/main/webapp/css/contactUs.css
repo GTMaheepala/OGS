@@ -1,0 +1,236 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    padding-top: 100px; /* Adjust if your navbar is taller */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    margin: 0;
+    padding: 50px;
+    color: #333;
+
+    background-image: url("../images/contactus2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.name {
+    color: #218838;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+  
+    right: 1cm;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .nav-links li a {
+    color: #000200;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #218838;
+  }
+
+  *
+  {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+ 
+  }
+
+  
+  .contactform {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+  }
+  
+  .contactform h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color:  #00796b;
+  }
+
+  .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .inputBox input,
+  .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 16px;
+    color: #888;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  .inputBox input:focus ~ span,
+  .inputBox input:valid ~ span,
+  .inputBox textarea:focus ~ span,
+  .inputBox textarea:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #00796b;
+  }
+
+  .inputBox input:focus,
+  .inputBox textarea:focus {
+    border-color:  #00796b;
+  }
+  
+  .inputBox input[type="submit"] {
+    background: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .inputBox input[type="submit"]:hover {
+    background: #0097a7;
+  }
+ 
+  .contactform
+  {
+    position: absolute;
+    right: 13cm;
+    top: 5cm;
+    opacity: 70%;
+  }
+  .contactInfo
+  {
+    position: absolute;
+    left: 3cm;
+    top :5cm;
+  }
+  .content
+  {
+    position: absolute;
+    top: 0cm;
+  }
+
+  .Contact
+  {
+    background: transparent;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/contactus2.jpeg");
+    background-size: cover;
+   
+  }
+.Contact.content
+  {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .Contact .content h2
+  {
+    font-size: 36px;
+    font-weight: 500;
+    color: #04453d;
+    text-align: center;
+  }
+ 
+  .Contact .content p
+  {
+    font-weight: 400;
+    color: #031702;
+    text-align: inherit;
+  }
+ 
+  .container
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+ 
+  .container .contactInfo
+  {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .contactInfo .box
+  {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+ 
+  .container .contactInfo .box .icon
+  {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+ 
+  .container .contactInfo .box .text
+  {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+ 
+  }
+  
+ 
+.logo1{
+    width: 15%;
+}
+
+
+

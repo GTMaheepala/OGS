@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+    color: #333;
+    background-image: url("../images/contactus2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+
+  #backBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  #backBtn:hover {
+    background-color: #0056b3;
+  }
+
+  .add-user-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .add-user-btn:hover {
+    background-color: #218838;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f1f1f1;
+    font-weight: 600;
+  }
+
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .edit-btn, .delete-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+  }
+
+  .edit-btn:hover {
+    background-color: #e0a800;
+  }
+
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  
+  
+#backBtn{
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#backBtn {
+  background: #1e3c60;
+  color: white;
+}
+
+#backBtn:hover {
+  background: #5a6268;}

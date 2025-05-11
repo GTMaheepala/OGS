@@ -7,6 +7,13 @@
 <meta charset="UTF-8">
 <title>User Profile</title>
 <link rel="stylesheet" href="../css/profile.css">
+<style>
+        body{
+            background: url('../images/bg2.jpg')no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>	
 <div class="profile-card">
