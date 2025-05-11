@@ -20,14 +20,14 @@
     </a>
     <h2>Employee Panel</h2>
     <ul>
-      <a href="e_dashboard.html"><li><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
-      <a href="order.html"><li class="active"><i class="fas fa-box"></i> Orders</li></a>
-      <a href="estore.html"><li><i class="fas fa-store"></i> Store</li></a>
+      <a href="Com/e_dashboard.jsp"><li><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
+      <a href="order.jsp"><li class="active"><i class="fas fa-box"></i> Orders</li></a>
+      <a href="estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
     </ul>
     <div class="profile-section">
       <ul>
-        <a href="employee_account.php"><li><i class="fas fa-user"></i> Profile</li></a>
-        <a href="logout.php"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
+        <a href="Com/profile.jsp"><li><i class="fas fa-user"></i> Profile</li></a>
+        <a href="Com/login.jsp" onclick="if(confirm('Are you sure you want to logout?')) { document.getElementById('logoutForm').submit(); } return false;"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
       </ul>
     </div>
   </div>

@@ -50,9 +50,9 @@
     </header>
 
     <section class="cards">
-      <a href="#">
+      <a href="../deliveryGetAllDataServlet">
       <div class="card">
-        <h3>Order Management</h3>
+        <h3>Order & Delivery Management</h3>
         <p>Track and process orders</p>
       </div></a>
       <a href="#">
