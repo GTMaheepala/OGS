@@ -124,4 +124,70 @@ public class DataController {
 			return deliveries;
 		}
 
+	//Update data
+		
+		public static boolean updatedata(String id, String firstName, String lastName, String email, String phoneNO, String companyName, String status, String vehicleType) {
+			
+			try {
+				//DBConnection  
+				con = DB_Connection.getConnection();
+				stmt = con.createStatement();	
+				
+				//SQL Query
+				String sql = "update deli_partner set firstName = '"+firstName+"', lastName = '"+lastName+"', email = '"+email+"', phoneNO = '"+phoneNO+"', companyName = '"+companyName+"', status = '"+status+"', vehicleType = '"+vehicleType+"'" + "where id = '"+id+"'" ;
+				
+				int rs = stmt.executeUpdate(sql);
+				
+					if(rs > 0) {
+					
+						isSuccess = true;
+					}
+					else {
+					
+						isSuccess = false;
+					}
+				
+				}
+				catch(Exception e) {
+					
+					e.printStackTrace();
+				}
+			
+			return isSuccess;
+		}
+		
+		
+		//delete Data
+		public static boolean deletedata(String id) {
+			
+			int convID = Integer.parseInt(id);
+			
+			try {
+				//DBConnection
+				con = DB_Connection.getConnection();
+				stmt = con.createStatement();
+				
+				String sql = "delete from deli_partner where id = '"+convID+"'";
+				
+				int rs = stmt.executeUpdate(sql);
+				
+				if(rs > 0) {
+					
+					isSuccess = true;
+				}
+				else {
+					
+					isSuccess = false;
+				}
+			}
+			catch(Exception e) {
+				
+				e.printStackTrace();
+			
+			}
+			
+			return isSuccess;
+		}
+		
+		
 }

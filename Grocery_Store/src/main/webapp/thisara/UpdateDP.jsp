@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Delivery Partner - TheFreshMart</title>
-    <link rel="stylesheet" href="../css/AddDP.css">
+    <link rel="stylesheet" href="../css/UpdateDP.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -32,43 +32,56 @@
 
     <div class="main-content">
         <header>
-            <h1>Enter Delivery Partner Details</h1>
+            <h1>Edit Delivery Partner Details</h1>
         </header>
 
         <div class="form-container">
             <h2>Delivery Partner Information</h2><br>
 
+			 <%
+				String id = request.getParameter("id");
+			    String firstName = request.getParameter("firstName");
+			    String lastName = request.getParameter("lastName");	
+			    String email = request.getParameter("email");	
+			    String phoneNO = request.getParameter("phoneNO");	
+			    String companyName = request.getParameter("companyName");	
+			    String status = request.getParameter("status");	
+			    String vehicleType = request.getParameter("vehicleType");	
+			 %>
 
-	         <form id="deliveryPartnerForm" method="post" action="<%= request.getContextPath() %>/InsertDServlet">
+	         <form id="deliveryPartnerForm" method="post" action="<%= request.getContextPath() %>/UpdateServlet">
 
+					<label for="courierid">Courier ID:</label>
+                    <input type="text" id="courierid" value=<%=id%> name="id" readonly>
+					
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" value=<%=firstName%> name="firstName" required>
 
                     <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" value=<%=lastName%> name="lastName" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" value=<%=email%> name="email" required>
 
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phoneNO" required>
+                    <input type="tel" id="phone" value=<%=phoneNO%> name="phoneNO" required>
 
                     <label for="companyName">Company Name:</label>
-                    <input type="text" id="companyName" name="companyName" required>
+                    <input type="text" id="companyName" value=<%=companyName%> name="companyName" required>
                     
                    <label for="status">Status:</label>
-                    <select id="status" name="status" required>
-                        <option value="active">Active</option>
-                        <option value="inactive">Inactive</option>
-                        <option value="on_delivery">On Delivery</option>
+                    <select id="status"  name="status" required>
+                        <option value="active <%= "active".equals(vehicleType)? "selected" : ""%>>">Active</option>
+                        <option value="inactive <%= "inactive".equals(vehicleType)? "selected" : ""%>>">Inactive</option>
+                        <option value="on_delivery <%= "on_delivery".equals(vehicleType)? "selected" : ""%>>">On Delivery</option>
                     </select>
 
                     <label for="vehicleType">Vehicle Type:</label>
                     <select id="vehicleType" name="vehicleType" required>
-                        <option value="motorcycle">Motorcycle</option>
-                        <option value="bicycle">Bicycle</option>
-                        <option value="car">Car</option>
-                        <option value="van">Van</option>
+                        <option value="motorcycle" <%= "motorcycle".equals(vehicleType)? "selected" : ""%>>Motorcycle</option>
+                        <option value="bicycle"<%= "bicycle".equals(vehicleType)? "selected" : ""%>>Bicycle</option>
+                        <option value="car"<%= "car".equals(vehicleType)? "selected" : ""%>>>Car</option>
+                        <option value="van"<%= "van".equals(vehicleType)? "selected" : ""%>>>Van</option>
                     </select>
                     
                     <br>
