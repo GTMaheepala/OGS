@@ -128,6 +128,9 @@
 	String phone_no = request.getParameter("phone_no");
 	String password = request.getParameter("password");
 	String check_user = request.getParameter("check_user");
+	if (check_user == null) {
+        check_user = request.getParameter("check_user"); // fallback
+    }
 %>
 <!-- Edit Employee Modal -->
 <div class="top-bar">
