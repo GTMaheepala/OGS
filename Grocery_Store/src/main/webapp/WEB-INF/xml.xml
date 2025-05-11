@@ -223,6 +223,46 @@
 	    <servlet-name>PromotionDeleteServlet</servlet-name>
 	    <url-pattern>/PromotionDeleteServlet</url-pattern>
 	</servlet-mapping>
+	
+	<!-- tharushi package -->
+     <servlet>
+    	<servlet-name>ContactServlet</servlet-name>
+    	<servlet-class>tharushi.ContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>ContactServlet</servlet-name>
+	    <url-pattern>/ContactServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- tharushi package -->
+     <servlet>
+    	<servlet-name>ConusGetAllServlet</servlet-name>
+    	<servlet-class>tharushi.ConusGetAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>ConusGetAllServlet</servlet-name>
+	    <url-pattern>/ConusGetAllServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- tharushi package -->
+     <servlet>
+    	<servlet-name>UpdateConusServlet</servlet-name>
+    	<servlet-class>tharushi.UpdateConusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>UpdateConusServlet</servlet-name>
+	    <url-pattern>/UpdateConusServlet</url-pattern>
+	</servlet-mapping>
+	
+	<!-- tharushi package -->
+     <servlet>
+    	<servlet-name>ConusDeleteServlet</servlet-name>
+    	<servlet-class>tharushi.ConusDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>ConusDeleteServlet</servlet-name>
+	    <url-pattern>/ConusDeleteServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

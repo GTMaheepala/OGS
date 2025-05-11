@@ -21,7 +21,7 @@
             <li><a href="index.jsp" class="active">Home</a></li>
             <li><a href="store.jsp">Store</a></li>
             <li><a href="aboutus.jsp">About Us</a></li>
-            <li><a href="profile.jsp">Contact Us</a></li>
+            <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
     		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";

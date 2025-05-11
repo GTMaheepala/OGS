@@ -8,10 +8,10 @@
 </head>
 <body>
            <div class = "contactform">
-                <form method="post" action="insertsevlet">
+                <form method="post" action="/Grocery_Store/ContactServlet">
                     <h2>Send message  </h2>
                     <div class ="inputBox">
-                        <input type = "text" name ="name" required = "required">
+                        <input type = "text" name ="full_name" required = "required">
                         <span>Full Name </span>
                     </div>
 
@@ -26,7 +26,7 @@
                     </div>
 
                     <div class ="inputBox">
-                        <input type = "submit" name ="" value = "send" onclick="handleSubmit(e)">  
+                        <input type = "submit" name ="" value = "send">  
                     </div>
 
 
