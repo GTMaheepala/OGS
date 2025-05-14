@@ -15,6 +15,7 @@ body {
 }
 
 .profile-card {
+  margin-top:15%;
   width: 410px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -81,7 +82,7 @@ body {
 .profile-body label {
   display: block;
   font-weight: 500;
-  color: #000000;
+  color: #353535;
   margin-bottom: 6px;
 }
 

@@ -67,6 +67,6 @@
 </div>
 	
 	<script src="../js/profile.js"></script>
-	
+	<br><br><br>
 </body>
 </html>
