@@ -6,18 +6,20 @@
 <head>
 <meta charset="UTF-8">
 <title>User Management - TheFreshMart</title>
-    <link rel="stylesheet" href="css/user_mane.css">
+    <link rel="stylesheet" href="css/user_manea.css">
     <link rel="stylesheet" href="css/e_dashboard.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
 <!-- Sidebar Navigation -->
   <div class="sidebar">
     <a href="Com/index.jsp">
         <img class="logo" src="images/logo_GS.png">
     </a>
     <h2>Employee Panel</h2>
+    <div>
     <ul>
       <a href="Com/a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
       <a href="Com/aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
@@ -25,6 +27,7 @@
       <a href="Com/o&i.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
       <a href="Com/contactus.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
     </ul>
+    </div>
     <div class="profile-section">
       <ul>
         <%
@@ -39,6 +42,7 @@
     </div>
   </div>
 
+  <div class="neww">
     <div class="user-container">
         <div class="user-header">
             <h1><i class="fas fa-users"></i> User Management</h1>
@@ -95,7 +99,7 @@
             </table>
         </div>
     </div>
-
+  </div>
     <script src="js/user_mane.js"></script>
 </body>
 </html>
