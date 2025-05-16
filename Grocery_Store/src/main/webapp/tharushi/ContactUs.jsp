@@ -99,7 +99,7 @@
                     </div>
 
                     <div class ="inputBox">
-                        <input type = "text" name ="email" required = "required">
+                        <input type = "email" name ="email" required = "required">
                         <span>Email </span>
                     </div>
                       

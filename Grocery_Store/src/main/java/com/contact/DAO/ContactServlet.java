@@ -20,7 +20,7 @@ public class ContactServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 String fullName = request.getParameter("full_name");
+		 	String fullName = request.getParameter("full_name");
 	        String email = request.getParameter("email");
 	        String message = request.getParameter("message");
 

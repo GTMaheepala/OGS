@@ -118,6 +118,6 @@
     </div>
   </div> 
 </div>
-  <script src="/employee_mane.js"></script>
+  <script src="js/employee_mane.js"></script>
 </body>
 </html>
