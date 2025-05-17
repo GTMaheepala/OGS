@@ -19,7 +19,7 @@
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
             <li><a href="index.jsp" class="active">Home</a></li>
-            <li><a href="store.jsp">Store</a></li>
+            <li><a href="../thilakshana/Store.jsp">Store</a></li>
             <li><a href="aboutus.jsp">About Us</a></li>
             <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <%

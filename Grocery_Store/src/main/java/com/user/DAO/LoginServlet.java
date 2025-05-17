@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
 			        // Regular user
 //			        response.sendRedirect("Com/index.jsp");
 			    	String alertMessage = "Login Successful";
-					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='Com/index.jsp'</script>");
+					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='thilakshana/Store.jsp'</script>");
 			    }
 			}
 			

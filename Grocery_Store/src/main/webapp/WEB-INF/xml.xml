@@ -263,6 +263,50 @@
 	    <servlet-name>ConusDeleteServlet</servlet-name>
 	    <url-pattern>/ConusDeleteServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- thilakshana package -->
+     <servlet>
+    	<servlet-name>DeleteServlet</servlet-name>
+    	<servlet-class>com.checkout.DAO.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>DeleteServlet</servlet-name>
+	    <url-pattern>/DeleteServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- thilakshana package -->
+     <servlet>
+    	<servlet-name>Update_Servlet</servlet-name>
+    	<servlet-class>com.checkout.DAO.Update_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>Update_Servlet</servlet-name>
+	    <url-pattern>/Update_Servlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- thilakshana package -->
+     <servlet>
+    	<servlet-name>GetAllServlet</servlet-name>
+    	<servlet-class>com.checkout.DAO.GetAllServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>GetAllServlet</servlet-name>
+	    <url-pattern>/GetAllServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- thilakshana package -->
+     <servlet>
+    	<servlet-name>insertServlet</servlet-name>
+    	<servlet-class>com.checkout.DAO.insertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>insertServlet</servlet-name>
+	    <url-pattern>/insertServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>
