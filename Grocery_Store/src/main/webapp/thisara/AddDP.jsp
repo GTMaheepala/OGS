@@ -81,7 +81,7 @@
                         <i class="fas fa-times"></i> Cancel
                     </button>
                 
-              </form>
+               </form> 
             
             </div>
     </div>
