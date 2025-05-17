@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Employee Management - TheFreshMart</title>
-  <link rel="stylesheet" href="css/employee_mane.css"/>
+  <link rel="stylesheet" href="css/employee_manea.css"/>
   <link rel="stylesheet" href="css/e_dashboard.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -38,7 +38,7 @@
       </ul>
     </div>
   </div>
-
+<div class="neww">
   <div class="employee-container">
     <div class="employee-header">
       <h1><i class="fas fa-users-cog"></i> Employee Management</h1>
@@ -117,7 +117,7 @@
       </table>
     </div>
   </div> 
-
+</div>
   <script src="js/employee_mane.js"></script>
 </body>
 </html>

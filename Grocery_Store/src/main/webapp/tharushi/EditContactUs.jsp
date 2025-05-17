@@ -1,19 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Contact us form</title>
+<title>Insert title here</title>
 <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/contactUs.css">
+    <link rel="stylesheet" href="../css/EditContactUs.css">
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
 <nav class="navbar">
         <div class="nav-container">
           <a href="../Com/index.jsp">
@@ -39,86 +40,43 @@
 </div>
 
 <br><br><br><br>
+<%
+	String id = request.getParameter("id");
+    String fullName = request.getParameter("full_name");
+    String email = request.getParameter("email");
+    String message = request.getParameter("message");
+%>
+<div class="top-bar">
+    <button onclick="window.history.back();">← Back</button>
+</div>
 
-
-<section class = "Contact">
-        <div class = "content">
-            <br>
-           <h2>Contact Us </h2>
-
-            <p>We are available to be of service!  Our staff is available to help, whether you need help with our website, have issues regarding your order, or would like to provide feedback. 
-                 You can contact us by phone, email, or by completing the form below.  Our goal is to answer all questions as soon as we can.  <br>
-                 Your happiness is our top priority, so thank you for selecting our FRESH MART online grocery service!</p>
-                 
+<div class="edit-container">
+    <h2>Edit Contact Message</h2>
+    <form action="/Grocery_Store/UpdateConusServlet" method="POST">
+        <div class="form-group">
+            <label for="id">Message ID</label>
+            <input type="text" id="id" name="id" value="<%= id %>" readonly>
         </div>
-        
-        <div class = "container">
-            <div class = "contactInfo">
+        <div class="form-group">
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" value="<%= fullName %>" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<%= email %>" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required><%= message %></textarea>
+        </div>
+        <div class="form-footer">
+            <button type="reset" class="btn cancel">Cancel</button>
+            <button type="submit" class="btn save">Save</button>
+        </div>
+    </form>
+</div>
 
-                <div class="box">
-                    <div class = "icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Address</h3>
-                        <p>The FreshMart Online Grocery<br>
-                            No. 45, Greenway Avenue,<br>
-                            Colombo 05,<br>
-                            Sri Lanka</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class = "icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Tel:</h3>
-                        <p>+94 7025864</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <div class = "icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                    <div class="text">
-                        <h3>Email</h3>
-                        <p>thefreshmart@gmail.com</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <br>
-            <br>
-
-
-
-
-           <div class = "contactform">
-                <form method="post" action="/Grocery_Store/ContactServlet">
-                    <h2>Send message  </h2>
-                    <div class ="inputBox">
-                        <input type = "text" name ="full_name" required = "required">
-                        <span>Full Name </span>
-                    </div>
-
-                    <div class ="inputBox">
-                        <input type = "email" name ="email" required = "required">
-                        <span>Email </span>
-                    </div>
-                      
-                    <div class ="inputBox">
-                        <textarea name="message" required = "required"></textarea>
-                        <span>Type your message.. </span>
-                    </div>
-
-                    <div class ="inputBox">
-                        <input type = "submit" name ="" value = "send">  
-                    </div>
-
-
-                </form>
-            </div>
-		</div>	
-  </section>
-  
-   <!-- Footer -->
+<!-- Footer -->
 <footer>
   <div class="footer-container">
     <div class="footer-column">
@@ -159,7 +117,5 @@
     &copy; 2025 Tharu Baby Co. All rights reserved.
   </div>
 </footer>
-  <script src="js/contactUs.js"></script>
-  
 </body>
 </html>
