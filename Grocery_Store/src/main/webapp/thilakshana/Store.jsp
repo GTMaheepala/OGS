@@ -377,8 +377,8 @@ background-color: rgba(0, 0, 0, 0.6);
 <body>
 <nav class="navbar">
         <div class="nav-container">
-          <a href="Store.jsp">
-            <img class="logo" src="images/logo_OGS.png" alt="Logo image" href="index.jsp">
+          <a href="../Com/index.jsp">
+            <img class="logo" src="../images/logo_OGS.png" alt="Logo image" href="../Com/index.jsp">
           </a>
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
@@ -415,29 +415,168 @@ background-color: rgba(0, 0, 0, 0.6);
           </div>
     </nav>
     <main>
+    <br><br><br>
         <!-- slide banner 2 -->
   <div class="slider">
     <div class="slide-track">
       <!-- Repeat images twice for seamless loop -->
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner3.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner4.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner3.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner4.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
   
       <!-- Repeat for seamless looping -->
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner3.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner4.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner1.png" loading="lazy"></div>
-      <div class="slide"><img src="images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner3.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner4.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner1.png" loading="lazy"></div>
+      <div class="slide"><img src="../images/OSbanner2.png" loading="lazy"></div>
     </div>
   </div>
 
     <section id="products" class="product-section">
-      <h2>Best Of Fruits & Vegetables</h2>
+      <h2 id="Vegetables">Vegetables</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="../images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/waterMelon.png" alt="WaterMelon"/>
+            <h3 class="category">Water Melon</h3>
+            <h3 class ="price">Rs. 110.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('WaterMelon', 110)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/potato.png" alt="Potato"/>
+            <h3 class="category">Potato</h3>
+            <h3 class ="price">Rs. 180.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Potato', 180)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/gotukola.png" alt="Gotukola"/>
+            <h3 class="category">Gotukola</h3>
+            <h3 class ="price">Rs. 50.00 / 100g</h3>
+            <button class="but2" onclick="addToCart('Gotukola', 50)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/coconut.png" alt="Coconut"/>
+            <h3 class="category">Coconut</h3>
+            <p>Rs. 596.00 / 3pcs</p>
+            <button class="but2" onclick="addToCart('Coconut', 198)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/ladiesfingers.png" alt="Ladieesfingers"/>
+            <h3 class="category">Ladies Fingers</h3>
+            <h3 class ="price">Rs. 87.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Ladieesfingers', 87)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/pumpkin.png" alt="Pumpkin"/>
+            <h3 class="category">Pumpkin</h3>
+            <h3 class ="price">Rs. 110.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Pumpkin', 110)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section" >
+      <h2 id="Fruits">Fruits</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../images/papaw.jpg" alt="tomato"/>
+          <h3 class="category">Papaw</h3>
+          <h3 class ="price">Rs. 150.00 / 1.25kg</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/guava.jpg" alt="onion"/>
+          <h3 class="category">Guava</h3>
+          <h3 class ="price">Rs. 960.00 / 1.00kg</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/melon.jpg" alt="Carrot"/>
+            <h3 class="category">Sweet Melon</h3>
+            <h3 class ="price">Rs. 300.00 / 2.00kg</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/pineapple.png" alt="Papaw"/>
+            <h3 class="category">Pineapple</h3>
+            <h3 class ="price">Rs. 400.00 / 1.25kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/mandarin.jpg" alt="Thalanabatu"/>
+            <h3 class="category">Imported Mandarin</h3>
+            <h3 class ="price">Rs. 840.00 / 600g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- <section id="products" class="product-section" >
+      <h2 id="Avurudu">Avurudu Kade</h2>
       <div class="product-grid">
         <div class="product">
           <img src="images/tomato.jpg" alt="tomato"/>
@@ -481,46 +620,532 @@ background-color: rgba(0, 0, 0, 0.6);
             <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
+      </div>
+    </section> -->
+    
+    <section id="products" class="product-section">
+      <h2 id="Baby">Baby Products</h2>
+      <div class="product-grid">
         <div class="product">
-            <img src="images/waterMelon.png" alt="WaterMelon"/>
-            <h3 class="category">Water Melon</h3>
-            <h3 class ="price">Rs. 110.00 / 1kg</h3>
-            <button class="but2" onclick="addToCart('WaterMelon', 110)">Add to Cart</button>
+          <img src="../images/Marvel.jpg" alt="tomato"/>
+          <h3 class="category">Marvel Baby Diapers, Large</h3>
+          <h3 class ="price">Rs. 3600.00 / 48pcs</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Diapers.jpg" alt="onion"/>
+          <h3 class="category">Marvel Baby Diapers, Medium</h3>
+          <h3 class ="price">Rs. 3600.00 / 48pcs</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Pears.png" alt="Banana"/>
+          <h3 class="category">Pears Bedtime Baby Soap Multi pack 70g</h3>
+          <h3 class ="price">Rs. 510.00 / 5pcs</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/Khomba.jpg" alt="Carrot"/>
+            <h3 class="category">Khomba Baby Soap Milk</h3>
+            <h3 class ="price">Rs. 140.00 / 90g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="../images/Velona.jpg" alt="Papaw"/>
+            <h3 class="category">Velona Cuddles Baby Diapers,L</h3>
+            <h3 class ="price">Rs. 3231.00 / 32pcs</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
         <div class="product">
-            <img src="images/potato.png" alt="Potato"/>
-            <h3 class="category">Potato</h3>
-            <h3 class ="price">Rs. 180.00 / 500g</h3>
-            <button class="but2" onclick="addToCart('Potato', 180)">Add to Cart</button>
+            <img src="../images/Wash.jpg" alt="Thalanabatu"/>
+            <h3 class="category">Panda Baby Wash</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Dairy">Dairy</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../images/Butter.jpg" alt="tomato"/>
+          <h3 class="category">Kotmale Butter Salted</h3>
+          <h3 class ="price">Rs. 792.00 / 200g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Curd.jpg" alt="onion"/>
+          <h3 class="category">Kotmale Curd</h3>
+          <h3 class ="price">Rs. 510.00 / 900g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Yoghurt.jpg" alt="Banana"/>
+          <h3 class="category">Kotmale Drinking Yoghurt Strawberry</h3>
+          <h3 class ="price">Rs. 135.00 / 180ml</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/Multi.jpg" alt="Carrot"/>
+            <h3 class="category">Newdale Set Yoghurt Multi Pack 80 g</h3>
+            <h3 class ="price">Rs. 392.00 / 8pcs</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="../images/Newdale.jpg" alt="Papaw"/>
+            <h3 class="category">Newdale Set Plain Yoghurt</h3>
+            <h3 class ="price">Rs. 56.00 / 80g</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
         <div class="product">
-            <img src="images/gotukola.png" alt="Gotukola"/>
-            <h3 class="category">Gotukola</h3>
-            <h3 class ="price">Rs. 50.00 / 100g</h3>
-            <button class="but2" onclick="addToCart('Gotukola', 50)">Add to Cart</button>
+            <img src="../images/Richlife.jpg" alt="Thalanabatu"/>
+            <h3 class="category">Richlife Full Cream Fresh Milk</h3>
+            <h3 class ="price">Rs. 112.00 / 180ml</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Beverages">Beverages</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../images/Viva.jpg" alt="tomato"/>
+          <h3 class="category">Viva Malted Food Drink</h3>
+          <h3 class ="price">Rs. 1080.00 / 600g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Dew.jpg" alt="onion"/>
+          <h3 class="category">Mountain Dew</h3>
+          <h3 class ="price">Rs. 300.00 / 1.50l</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Nectar.jpg" alt="Banana"/>
+          <h3 class="category">Kist Woodapple Nectar</h3>
+          <h3 class ="price">Rs. 412.50 / 1l</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/Absolute.jpg" alt="Carrot"/>
+            <h3 class="category">Kist Absolute Apple Juice</h3>
+            <h3 class ="price">Rs. 825.00 / 1l</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="../images/Horlicks.jpg" alt="Papaw"/>
+            <h3 class="category">Horlicks Original Carton</h3>
+            <h3 class ="price">Rs. 770.00 / 350g</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
         <div class="product">
-            <img src="images/coconut.png" alt="Coconut"/>
-            <h3 class="category">Coconut</h3>
-            <p>Rs. 596.00 / 3pcs</p>
-            <button class="but2" onclick="addToCart('Coconut', 198)">Add to Cart</button>
+            <img src="../images/Necto.jpg" alt="Thalanabatu"/>
+            <h3 class="category">Elephant House Necto</h3>
+            <h3 class ="price">Rs. 400.00 / 1.5l</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Food">Food Cupboard</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="../images/Soy.jpg" alt="tomato"/>
+          <h3 class="category">Lankasoy Meaty Soy</h3>
+          <h3 class ="price">Rs. 107.00 / 60g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Noodles.jpg" alt="onion"/>
+          <h3 class="category">Sera Chicken Flavoured Noodles</h3>
+          <h3 class ="price">Rs. 296.00 / 325g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="../images/Spaghetti.jpg" alt="Banana"/>
+          <h3 class="category">Roza Spaghetti</h3>
+          <h3 class ="price">Rs. 380.00 / 400g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="../images/Fusilli.jpg" alt="Carrot"/>
+            <h3 class="category">Roza Fusilli</h3>
+            <h3 class ="price">Rs. 368.00 / 400g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="../images/Elbow.jpg" alt="Papaw"/>
+            <h3 class="category">Roza Elbow</h3>
+            <h3 class ="price">Rs. 322.00 / 400g</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
         <div class="product">
-            <img src="images/ladiesfingers.png" alt="Ladieesfingers"/>
-            <h3 class="category">Ladies Fingers</h3>
-            <h3 class ="price">Rs. 87.00 / 250g</h3>
-            <button class="but2" onclick="addToCart('Ladieesfingers', 87)">Add to Cart</button>
+            <img src="../images/Jam.png" alt="Thalanabatu"/>
+            <h3 class="category">Kist Mixed Fruit Jam</h3>
+            <h3 class ="price">Rs. 412.00 / 510g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Bakery">Bakery</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
         <div class="product">
-            <img src="images/pumpkin.png" alt="Pumpkin"/>
-            <h3 class="category">Pumpkin</h3>
-            <h3 class ="price">Rs. 110.00 / 500g</h3>
-            <button class="but2" onclick="addToCart('Pumpkin', 110)">Add to Cart</button>
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Household">Household</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Meats">Meats</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Seafood">Seafood</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Cooking">Cooking Essentials</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section">
+      <h2 id="Snacks">Snacks & Confectionery</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="products" class="product-section" class="Frozen_Food">
+      <h2 id="Frozen">Frozen Food</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/tomato.jpg" alt="tomato"/>
+          <h3 class="category">Tomato</h3>
+          <h3 class ="price">Rs. 375.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Tomato', 375)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/onion.jpg" alt="onion"/>
+          <h3 class="category">Onion</h3>
+          <h3 class ="price">Rs. 120.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Oninon', 120)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+          <img src="images/Banana.png" alt="Banana"/>
+          <h3 class="category">Banana-Kolikuttu</h3>
+          <h3 class ="price">Rs. 145.00 / 500g</h3>
+          <button class="but2" onclick="addToCart('Banana', 145)">Add to Cart</button>
+          <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/carrot.jpg" alt="Carrot"/>
+            <h3 class="category">Carrots</h3>
+            <h3 class ="price">Rs. 340.00 / 500g</h3>
+            <button class="but2" onclick="addToCart('Carrots', 340)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+          </div>
+        <div class="product">
+            <img src="images/papaw.png" alt="Papaw"/>
+            <h3 class="category">Papaw</h3>
+            <h3 class ="price">Rs. 175.00 / 1kg</h3>
+            <button class="but2" onclick="addToCart('Papaw', 175)">Add to Cart</button>
+            <button id="btn3" class="btn3">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="images/thalanabatu.png" alt="Thalanabatu"/>
+            <h3 class="category">Thalanabatu</h3>
+            <h3 class ="price">Rs. 130.00 / 250g</h3>
+            <button class="but2" onclick="addToCart('Thalanabatu', 130)">Add to Cart</button>
             <button id="btn3" class="btn3">Buy Now</button>
         </div>
       </div>

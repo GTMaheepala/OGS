@@ -136,78 +136,78 @@
   <section class="category-section">
     <div class="category-header">
       <h2>Shop by Category</h2>
-      <a href="store.html" class="view-more">View more</a>
+      <a href="../thilakshana/Store.jsp" class="view-more">View more</a>
     </div>
   
     <div class="category-grid">
-      <div class="category-item">
-        <a href="#">
+      <!-- <div class="category-item">
+        <a href="../thilakshana/Store.jsp#Avurudu" id="btn1">
         <img src="../images/catg1.png" alt="Avurudu Kade" />
         <p>Avurudu Kade</p></a>
-      </div>
+      </div> -->
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Vegetables" id="btn2">
         <img src="../images/vegetables.jpg" alt="Vegetables" />
         <p>Vegetables</p></a>
       </div>
-      <div class="category-item">
-        <a href="#">
+      <div class="category-item" >
+        <a href="../thilakshana/Store.jsp#Fruits" id="btn3">
         <img src="../images/fruits.jpg" alt="Fruits" />
         <p>Fruits</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Baby" id="btn4">
         <img src="../images/baby_pro.jpg" alt="Baby Products" />
         <p>Baby Products</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Dairy" id="btn5">
         <img src="../images/dairy.jpg" alt="Dairy" />
         <p>Dairy</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Beverages" id="btn6">
         <img src="../images/beverages.jpg" alt="Beverages" />
         <p>Beverages</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Food" id="btn7">
         <img src="../images/food_cup.jpg" alt="Food Cupboard" />
         <p>Food Cupboard</p></a>
       </div>
       <!-- Add more categories as needed -->
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Bakery" id="btn8">
         <img src="../images/bakery.jpg" alt="Bakery" />
         <p>Bakery</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Household" id="btn9">
         <img src="../images/household.jpg" alt="Household" />
         <p>Household</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Meats" id="btn10">
         <img src="../images/meats.jpg" alt="Meats" />
         <p>Meats</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Seafood" id="btn11">
         <img src="../images/seafood.jpg" alt="Seafood" />
         <p>Seafood</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Cooking" id="btn12">
         <img src="../images/cooking.jpg" alt="Cooking Essentials" />
         <p>Cooking Essentials</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Snacks" id="btn13">
         <img src="../images/snack.jpg" alt="Snacks & Confectionery" />
         <p>Snacks & Confectionery</p></a>
       </div>
       <div class="category-item">
-        <a href="#">
+        <a href="../thilakshana/Store.jsp#Frozen" id="btn14">
         <img src="../images/frozen.jpg" alt="Frozen Food" />
         <p>Frozen Food</p></a>
       </div>
@@ -302,5 +302,104 @@
 
   <script src="../js/index.js"></script>
   <script src="../js/footer.js"></script>
+   <script>
+        // Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Avurudu').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn1').addEventListener('click', scrollToHeading);}
+        
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Vegetables').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn2').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Fruits').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn3').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Baby').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn4').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Dairy').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn5').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Beverages').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn6').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Food').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn7').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Bakery').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn8').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Household').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn9').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Meats').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn10').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Seafood').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn11').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Cooking').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn12').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Snacks').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn13').addEventListener('click', scrollToHeading);}
+    
+// Function to scroll to the women 
+   {function scrollToHeading() {
+        document.getElementById('Frozen').scrollIntoView({ behavior: 'smooth' });
+    }
+    // Add an event listener to the button to call the function when clicked
+    document.getElementById('btn14').addEventListener('click', scrollToHeading);}
+   </script>
 </body>
 </html>
