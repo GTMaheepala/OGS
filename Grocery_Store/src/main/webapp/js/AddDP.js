@@ -1,58 +1,52 @@
-/* Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', () => {
-    if (typeof partnerId !== 'undefined') {
-        const partner = deliveryPartners.find(p => p.id === partner);
-        if (partner) {
-            populateForm(partner);
-        } else {
-            showAlert('Delivery partner not found', 'error');
-            setTimeout(() => {
-                window.location.href = 'order.jsp';
-            }, 2000);
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("deliveryPartnerForm");
+
+    form.addEventListener("submit", function (e) {
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const companyName = document.getElementById("companyName").value.trim();
+
+        // Basic validation
+        if (!firstName || !lastName || !email || !phone || !companyName) {
+            e.preventDefault();
+            showAlert("Please fill in all required fields.", "error");
+            return;
         }
-    }
-});*/
 
-/* Handle form submission
-document.getElementById('deliveryPartnerForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+        if (!validateEmail(email)) {
+            e.preventDefault();
+            showAlert("Please enter a valid email address.", "error");
+            return;
+        }
 
-    // Show success alert
-    showAlert('Delivery partner updated successfully!', 'success');
-
-    // Redirect to order.jsp after 2 seconds
-    setTimeout(() => {
-        window.location.href = 'order.jsp';
-    }, 2000);
-});*/
-
-
-/* Function to show an alert message
-function showAlert(message, type = 'success') {
-    const alertDiv = document.createElement('div');
-    alertDiv.className = `alert alert-${type}`;
-    alertDiv.textContent = message;
-
-    // Styling the alert
-    Object.assign(alertDiv.style, {
-        position: 'fixed',
-        top: '20px',
-        right: '20px',
-        padding: '15px 25px',
-        borderRadius: '5px',
-        color: 'white',
-        backgroundColor: type === 'error' ? '#e74c3c' : '#2ecc71',
-        zIndex: 1000,
-        animation: 'slideIn 0.5s ease'
+        if (!validatePhone(phone)) {
+            e.preventDefault();
+            showAlert("Please enter a valid phone number.", "error");
+            return;
+        }
     });
 
-    document.body.appendChild(alertDiv);
+    function validateEmail(email) {
+        // Simple regex for email validation
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
 
-    // Remove alert after 3 seconds with slide out animation
-    setTimeout(() => {
-        alertDiv.style.animation = 'slideOut 0.5s ease';
+    function validatePhone(phone) {
+        // Simple validation for 10-digit phone numbers
+        const re = /^\d{10}$/;
+        return re.test(phone);
+    }
+
+    function showAlert(message, type) {
+        const alert = document.createElement("div");
+        alert.className = `alert ${type === "error" ? "alert-error" : "alert-success"}`;
+        alert.textContent = message;
+        document.body.appendChild(alert);
         setTimeout(() => {
-            document.body.removeChild(alertDiv);
-        }, 500);
-    }, 3000);
-}*/
+            alert.remove();
+        }, 3000);
+    }
+});

@@ -86,6 +86,6 @@
             </div>
     </div>
     
-    <script src="js/AddDP.js"></script>
+    <script src="../js/AddDP.js"></script>
 </body>
 </html>

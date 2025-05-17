@@ -220,3 +220,25 @@ header h1::after {
         margin: 5px 0;
     }
 } 
+
+/*JS part*/
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.alert-error {
+    background-color: #f44336;
+    color: white;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+    color: white;
+}

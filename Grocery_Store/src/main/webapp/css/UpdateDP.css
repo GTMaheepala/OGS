@@ -220,3 +220,11 @@ header h1::after {
         margin: 5px 0;
     }
 } 
+
+/* JS css part*/
+input.modified, select.modified {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+

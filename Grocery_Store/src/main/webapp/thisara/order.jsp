@@ -120,6 +120,7 @@
     <br>
     <h2>Delivery Partner Table</h2>
     <br>
+    
     <div class="toolbar">
       <div class="filter-container">
         <select id="deliveryCompanyFilter">
@@ -182,6 +183,6 @@
       </table>
     </div>
    </div>
-    
+   <script src="../js/order.js"></script>
 </body>
 </html>
