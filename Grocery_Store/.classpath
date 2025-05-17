@@ -13,10 +13,10 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/JAR/JAR Files/javax.servlet-3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/JAR/JAR Files/jstl-1.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/JAR/JAR Files/jstl-api-1.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/JAR/JAR Files/mysql-connector-java-5.1.48-bin.jar"/>
-	<classpathentry exported="true" kind="lib" path="C:/Users/user/Desktop/JAR/JAR Files/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Thisara/Downloads/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Thisara/Downloads/mysql-connector-java-5.1.48-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Thisara/Downloads/jstl-api-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Thisara/Downloads/jstl-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Thisara/Downloads/javax.servlet-3.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
