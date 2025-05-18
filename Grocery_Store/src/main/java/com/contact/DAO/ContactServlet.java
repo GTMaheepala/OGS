@@ -29,7 +29,7 @@ public class ContactServlet extends HttpServlet {
 
 	        if (isTrue) {
 	            String alertMessage = "Message Sent Successfully";
-	            response.getWriter().println("<script>alert('" + alertMessage + "'); window.location.href='ConusGetAllServlet';</script>");
+	            response.getWriter().println("<script>alert('" + alertMessage + "'); window.location.href='GetUserMessagesServlet';</script>");
 	        } else {
 	            RequestDispatcher dis = request.getRequestDispatcher("Com/contact.jsp");
 	            dis.forward(request, response);

@@ -29,7 +29,7 @@ public class ConusDeleteServlet extends HttpServlet {
 
 	    if (isTrue == true) {
 	        String alertMessage = "Message Deleted Successfully";
-	        response.getWriter().println("<script>alert('" + alertMessage + "'); window.location.href='ConusGetAllServlet'</script>");
+	        response.getWriter().println("<script>alert('" + alertMessage + "'); window.location.href='GetUserMessagesServlet'</script>");
 	    } else {
 	        List<ConusModel> conusDetails = ConusController.getById(id);
 	        request.setAttribute("conusDetails", conusDetails);

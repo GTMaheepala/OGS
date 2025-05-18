@@ -42,7 +42,7 @@ public class UpdateConusServlet extends HttpServlet {
 
             // Display success message and redirect to the list of conus/contact messages
             String alertMessage = "Contact Message Update Successful";
-            response.getWriter().println("<script> alert('" + alertMessage + "'); window.location.href='ConusGetAllServlet'</script>");
+            response.getWriter().println("<script> alert('" + alertMessage + "'); window.location.href='GetUserMessagesServlet'</script>");
         } else {
             // If the update failed, redirect back to the contact list
             RequestDispatcher dis = request.getRequestDispatcher("ConusGetAllServlet");

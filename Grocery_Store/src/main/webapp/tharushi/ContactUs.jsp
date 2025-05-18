@@ -22,12 +22,12 @@
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
             <li><a href="../Com/index.jsp" >Home</a></li>
-            <li><a href="../Com/store.jsp">Store</a></li>
-            <li><a href="Com/aboutus.jsp">About Us</a></li>
-            <li><a href="../tharushi/ContactUs.jsp" class="active">Contact Us</a></li>
+            <li><a href="../thilakshana/Store.jsp">Store</a></li>
+            <li><a href="../Com/about.jsp">About Us</a></li>
+            <li><a href="ContactUs.jsp" class="active">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
-    		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";
+    		String profileLink = (user != null) ? "../Com/profile.jsp" : "../Com/login.jsp";
 			%>
 			<li><a href="<%= profileLink %>"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
 

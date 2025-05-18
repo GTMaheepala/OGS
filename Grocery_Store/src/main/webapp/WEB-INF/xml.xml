@@ -307,6 +307,16 @@
 	    <servlet-name>insertServlet</servlet-name>
 	    <url-pattern>/insertServlet</url-pattern>
 	</servlet-mapping>
+	
+	<!-- tharushi package -->
+     <servlet>
+    	<servlet-name>GetUserMessagesServlet</servlet-name>
+    	<servlet-class>com.contact.DAO.GetUserMessagesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>GetUserMessagesServlet</servlet-name>
+	    <url-pattern>/GetUserMessagesServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

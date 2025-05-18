@@ -23,7 +23,7 @@
       <a href="a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
       <a href="aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
       <a href="estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
-      <a href="o&i.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
+      <a href="inventory.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
       <a href="contactus.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
     </ul>
     <div class="profile-section">
@@ -60,7 +60,7 @@
         <h3>Customer Messages</h3>
         <p>Respond to inquiries</p>
       </div></a>
-      <a href="#">
+      <a href="newproduct.jsp">
       <div class="card">
         <h3>New Product</h3>
         <p>Add new product</p>
@@ -75,7 +75,7 @@
           <h3>Sales Overview</h3>
           <p>Monthly stats and analytics</p>
         </div></a>
-        <a href="#">
+        <a href="inventory.jsp">
           <div class="card">
             <h3>Inventory Management</h3>
             <p>Manage stock levels</p>

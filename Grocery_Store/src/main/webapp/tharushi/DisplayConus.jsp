@@ -6,13 +6,25 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/DisplayConus.css">
+<link rel="stylesheet" href="css/DCon.css">
 <link rel="stylesheet" href="../css/contactUs.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+<style>
+        body{
+            background-image: url("images/contactus2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+        }
+    </style>
 <div>
 <nav class="navbar">
         <div class="nav-container">
@@ -22,12 +34,12 @@
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
             <li><a href="Com/index.jsp" >Home</a></li>
-            <li><a href="Com/store.jsp">Store</a></li>
-            <li><a href="Com/aboutus.jsp">About Us</a></li>
+            <li><a href="thilakshana/Store.jsp">Store</a></li>
+            <li><a href="Com/about.jsp">About Us</a></li>
             <li><a href="tharushi/ContactUs.jsp" class="active">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
-    		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";
+    		String profileLink = (user != null) ? "Com/profile.jsp" : "Com/login.jsp";
 			%>
 			<li><a href="<%= profileLink %>"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
 
@@ -44,37 +56,49 @@
 <button class="add-user-btn" onclick="window.location.href='tharushi/ContactUs.jsp'">
    Add New Message
 </button>
-<table id="conusTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Message</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <c:forEach var="msg" items="${conusList}">
-                <tr>
-                    <td>${msg.id}</td>
-                    <td>${msg.fullName}</td>
-                    <td>${msg.email}</td>
-                    <td>${msg.message}</td>
-                    <td class="action-buttons">
-              <a href="tharushi/EditContactUs.jsp?id=${msg.id}&full_name=${msg.fullName}&email=${msg.email}&message=${msg.message}">
-                <button class="edit-btn">Edit</button>
+<div class="card">
+  <div class="card-header">
+    <h2><i class="fas fa-envelope"></i> Contact Messages</h2>
+  </div>
+  
+  <div class="card-body">
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <c:forEach var="msg" items="${conusList}">
+          <tr>
+            <td>${msg.id}</td>
+            <td>${msg.fullName}</td>
+            <td>${msg.email}</td>
+            <td>${msg.message}</td>
+            <td class="action-buttons">
+              <a href="tharushi/EditContactUs.jsp?id=${msg.id}&full_name=${msg.fullName}&email=${msg.email}&message=${msg.message}" title="Edit">
+                <button class="edit-btn">
+                  <i class="fas fa-edit"></i>
+                </button>
               </a>
-              <form action="/Grocery_Store/ConusDeleteServlet" method="post">
-                <input type="hidden" name="id" value="${msg.id}"/>
-                <button class="delete-btn">Delete</button>
+              <form action="/Grocery_Store/ConusDeleteServlet" method="post" style="display:inline;">
+                <input type="hidden" name="id" value="${msg.id}" />
+                <button class="delete-btn" title="Delete">
+                  <i class="fas fa-trash"></i>
+                </button>
               </form>
             </td>
-                </tr>
-            </c:forEach>
-            
-        </tbody>
+          </tr>
+        </c:forEach>
+      </tbody>
     </table>
+  </div>
+</div>
+
     <!-- Footer -->
 <footer>
   <div class="footer-container">

@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    background: #f4f7f9;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #162938;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo{
+    width: 40%;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    padding: 12px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sidebar  ul li  {
+    color: white; /* set link text color to white */
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 10px;
+    transition: 0.3s;
+  }
+
+  .sidebar ul li :hover {
+  color: #00bcd4; /* optional hover color */
+}
+  
+  .sidebar ul li:hover,
+  .sidebar ul li.active {
+    background: #1e3c60;
+  }
+
+  .profile-section {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  
+  .container {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    background: rgb(197, 215, 195);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(66, 62, 62, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #23312c;
+  }
+  
+  button {
+    background-color: #094a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5e6d5f;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #593737;
+    text-align: center;
+  }
+  #preview {
+    margin-top: 10px;
+  }
+  
+  #messageBox {
+    margin-top: 15px;
+    padding: 10px;
+    display: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #messageBox.success {
+    background-color: #e5e696;
+    color: #3a0505;
+  }
+  
+  #messageBox.error {
+    background-color: #cd3932;
+    color: #0f0f01;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  img.thumbnail {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 4px;
+  }
+  

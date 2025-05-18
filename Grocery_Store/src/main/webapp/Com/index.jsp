@@ -276,7 +276,7 @@
     <div class="footer-column">
       <h4>Support</h4>
       <ul>
-        <li><a href="contactus.jsp">Contact Us</a></li>
+        <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
         <li><a href="T&C.jsp">Terms of Service</a></li>
         <li><a href="P&P.jsp">Privacy Policy</a></li>
         <li><a href="faq.jsp">FAQ</a></li>

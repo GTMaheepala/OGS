@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.user.controller.UserController;
 import com.user.model.UserModel;
@@ -59,6 +60,9 @@ public class LoginServlet extends HttpServlet {
 			    }
 			    else {
 			        // Regular user
+			    	 HttpSession session = request.getSession();
+			            session.setAttribute("userEmail", email); // <-- Store user email in session
+			    	
 //			        response.sendRedirect("Com/index.jsp");
 			    	String alertMessage = "Login Successful";
 					response.getWriter().println("<script>alert('"+alertMessage+"');window.location.href='thilakshana/Store.jsp'</script>");

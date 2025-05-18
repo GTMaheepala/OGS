@@ -15,6 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+<style>
+        body{
+            background-image: url("../images/contactus2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+        }
+    </style>
 <nav class="navbar">
         <div class="nav-container">
           <a href="../Com/index.jsp">

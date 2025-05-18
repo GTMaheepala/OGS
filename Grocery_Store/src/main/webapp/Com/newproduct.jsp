@@ -3,9 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Employee Dashboard</title>
-  <link rel="stylesheet" href="../css/e_dashboard.css"/>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add new product</title>
+  <link rel="stylesheet" href="../css/newproduct.css"/>
   <script src="../js/e_dashboard.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -40,57 +41,58 @@
     </div>
   </div>
 
-  <!-- Main Dashboard Content -->
-  <div class="main-content">
-    <header>
-      <h1>Welcome, Employee!</h1>
-      <form id="logoutForm" action="../LogoutServlet" method="get">
-    		<button class="logout-btn" type="submit">Logout</button>
-		</form>
-    </header>
+    <div class="container">
+      <h1>Upload New Product</h1>
+      <br><br>
+      <form id="productForm">
 
-    <section class="cards">
-      <a href="../deliveryGetAllDataServlet">
-      <div class="card">
-        <h3>Order & Delivery Management</h3>
-        <p>Track and process orders</p>
-      </div></a>
-      <a href="#">
-      <div class="card">
-        <h3>Customer Messages</h3>
-        <p>Respond to inquiries</p>
-      </div></a>
-      <a href="newproduct.jsp">
-      <div class="card">
-        <h3>New Product</h3>
-        <p>Add new product</p>
-      </div></a>
-      <a href="#">
-      <div class="card">
-        <h3>Customer Reviews</h3>
-        <p>Respond to inquiries</p>
-      </div></a>
-      <!--  <a href="employee_mane.html">
-      <div class="card">
-        <h3>Employee Manage</h3>
-        <p>Employee List</p>
-      </div></a>-->
-      <a href="#">
-        <div class="card">
-          <h3>Sales Overview</h3>
-          <p>Monthly stats and analytics</p>
-        </div></a>
-        <a href="inventory.jsp">
-          <div class="card">
-            <h3>Inventory Management</h3>
-            <p>Manage stock levels</p>
-          </div></a>
-      <!-- <a href="user_mane.html">
-      <div class="card">
-        <h3>User Account Manage</h3>
-        <p>User Account List</p>
-      </div></a> -->
-    </section>
-  </div>
+        <input type="text" id="number" placeholder="Product Number" required />
+        <input type="text" id="name" placeholder="Product Name" required />
+        <input type="textarea" id="name" placeholder="Product description" required />
+        <input type="number" id="price" placeholder="Price" required />
+        <input type="number" id="quantity" placeholder="Quantity" required />
+        <select id="category" required>
+
+          <option value="">Select Category</option>
+          <option value="Fruits">Fruits</option>
+          <option value="Vegetables">Vegetables</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Baby Products">Baby Products</option>
+          <option value="Beverages">Beverages</option>
+          <option value="Bakery">Bakery</option>
+          <option value="snacks">Snacks</option>
+          <option value="others">others</option>
+
+        </select>
+
+        <div id="preview"></div>
+        <div id="messageBox"></div>
+
+        <input type="file" id="image" accept="image/*" />
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+  <br>
+      <h2>Inventory</h2>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Product rows go here -->
+        </tbody>
+      </table>
+    </div>
+  
+   
+  
+  <script src="../js/newproduct.js"></script>
 </body>
 </html>

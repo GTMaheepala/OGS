@@ -1,5 +1,6 @@
 package com.contact.controller;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +9,7 @@ import com.contact.model.ConusModel;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 import com.promotion.util.DB_Connection;
+import com.user.model.UserModel;
 
 public class ConusController {
 	
@@ -38,6 +40,34 @@ public class ConusController {
 
         return isSuccess;
     }
+    
+    
+    public static List<ConusModel> getMessagesByUser(String userEmail) {
+        ArrayList<ConusModel> messages = new ArrayList<>();
+
+        try {
+        	 con = (Connection) DB_Connection.getConnection();
+            String sql = "SELECT * FROM conus WHERE email = ?";
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, userEmail);
+            rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String fullName = rs.getString("full_name");
+                String email = rs.getString("email");
+                String message = rs.getString("message");
+
+                ConusModel msg = new ConusModel(id, fullName, email, message);
+                messages.add(msg);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return messages;
+    }
+
     
     
  // Get All Contact Messages
