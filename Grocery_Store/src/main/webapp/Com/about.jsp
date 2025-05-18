@@ -22,11 +22,11 @@
           </a>
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="login.html"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
+            <li><a href="index.jsp" class="active">Home</a></li>
+            <li><a href="../thilakshana/Store.jsp">Store</a></li>
+            <li><a href="about.jsp">About Us</a></li>
+            <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
+            <li><a href="login.jsp"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
             <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>
             <!-- <li><a href="#" onclick="toggleCartPanel()">Cart 🛒</a></li> -->
           </ul>
