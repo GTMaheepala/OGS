@@ -136,6 +136,38 @@ public class UserController {
 		}
 		return isSuccess;
 	}
+	
+	
+	//Employee Profile Update
+	public static boolean updateEmployee(int id, String first_name, String last_name, String email, int phone_no, String password, int check_user) {
+	    boolean isSuccess = false;
+
+	    try {
+	        con = DB_Connection.getConnection();
+
+	        String sql = "UPDATE user SET first_name=?, last_name=?, email=?, phone_no=?, password=?, check_user=? WHERE id=?";
+	        PreparedStatement ps = con.prepareStatement(sql);
+
+	        ps.setString(1, first_name);
+	        ps.setString(2, last_name);
+	        ps.setString(3, email);
+	        ps.setInt(4, phone_no);
+	        ps.setString(5, password);
+	        ps.setInt(6, check_user);
+	        ps.setInt(7, id);
+
+	        int rs = ps.executeUpdate();
+
+	        if (rs > 0) {
+	            isSuccess = true;
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return isSuccess;
+	}
+
 
 	//Get by ID
 	public static List<UserModel> getById (String Id){

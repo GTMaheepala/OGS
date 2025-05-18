@@ -55,7 +55,7 @@
         <h3>Order & Delivery Management</h3>
         <p>Track and process orders</p>
       </div></a>
-      <a href="#">
+      <a href="../ConusGetAllServlet">
       <div class="card">
         <h3>Customer Messages</h3>
         <p>Respond to inquiries</p>

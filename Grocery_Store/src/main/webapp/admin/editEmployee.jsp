@@ -173,6 +173,7 @@
 			  <label for="position">Position</label>
 			  <select id="position" name="check_user" required>
 			    <option value="">Select Position</option>
+			    <option value="1" <%= "1".equals(check_user) ? "selected" : "" %>>User</option>
 			    <option value="2" <%= "2".equals(check_user) ? "selected" : "" %>>Store Manager</option>
 			    <option value="3" <%= "3".equals(check_user) ? "selected" : "" %>>Delivery Manager</option>
 			    <option value="4" <%= "4".equals(check_user) ? "selected" : "" %>>Admin</option>

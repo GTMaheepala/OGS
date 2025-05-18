@@ -43,7 +43,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
   backdrop-filter: blur(10px);
-  background: rgba(22, 41, 56, 0.6);
+  background: rgb(31, 41, 250);
   color: #ffffff;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 #logoutBtn {
-  background: rgba(220, 53, 69, 0.7);
+  background: rgb(255, 0, 128);
 }
 
 #logoutBtn:hover {

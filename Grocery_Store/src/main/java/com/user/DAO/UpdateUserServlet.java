@@ -36,7 +36,7 @@ public class UpdateUserServlet extends HttpServlet {
 		int phone = Integer.parseInt(phone_no);
 		int checkuser = Integer.parseInt(request.getParameter("check_user"));
 		
-		isTrue = UserController.updateprofile(Id, first_name, last_name, email, phone, password,checkuser);
+		isTrue = UserController.updateEmployee(Id, first_name, last_name, email, phone, password, checkuser);
 		
 		if(isTrue == true) {
 			List<UserModel> userdetails = UserController.getById(id);
