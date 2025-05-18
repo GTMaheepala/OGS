@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8" />
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inventory  management</title>
   <link rel="stylesheet" href="../css/inventory.css"/>

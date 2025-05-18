@@ -5,6 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FreshMart - Order Summary</title>
+	<link rel="icon" type="image/png" href="images/logo_OGS_4.png">
 	<style>
 		body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

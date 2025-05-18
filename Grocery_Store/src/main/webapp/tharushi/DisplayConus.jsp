@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="icon" type="image/png" href="images/logo_OGS_4.png">
 <link rel="stylesheet" href="css/DCon.css">
 <link rel="stylesheet" href="../css/contactUs.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">

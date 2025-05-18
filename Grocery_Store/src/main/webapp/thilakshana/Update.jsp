@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>FreshMart</title>
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
  <style>
     body {
         margin: 0;

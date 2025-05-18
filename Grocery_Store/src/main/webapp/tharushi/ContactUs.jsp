@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Contact us form</title>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <link rel="stylesheet" href="../css/contactUs.css">
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -128,18 +129,18 @@
     <div class="footer-column">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="store.html">Store</a></li>
+        <li><a href="../Com/index.jsp">Home</a></li>
+        <li><a href="../thilakshana/Store.html">Store</a></li>
         <li><a href="#" onclick="toggleCartPanel()">Cart</a></li>
       </ul>
     </div>
     <div class="footer-column">
       <h4>Support</h4>
       <ul>
-        <li><a href="contactus.jsp">Contact Us</a></li>
-        <li><a href="T&C.jsp">Terms of Service</a></li>
-        <li><a href="P&P.jsp">Privacy Policy</a></li>
-        <li><a href="faq.jsp">FAQ</a></li>
+        <li><a href="ContactUs.jsp">Contact Us</a></li>
+        <li><a href="../Com/T&C.jsp">Terms of Service</a></li>
+        <li><a href="../Com/P&P.jsp">Privacy Policy</a></li>
+        <li><a href="../Com/faq.jsp">FAQ</a></li>
       </ul>
     </div>
     <div class="footer-column">

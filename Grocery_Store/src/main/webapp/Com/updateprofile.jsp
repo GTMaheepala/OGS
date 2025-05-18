@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Upadte Profile</title>
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
 <link rel="stylesheet" href="../css/update-profile.css">
 <style>
         body{

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>FAQ - Online Grocery Ordering System</title>
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <link rel="stylesheet" href="../css/faq.css">
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -22,9 +23,9 @@
           <h2 class="name">GroceryStore</h2>
           <ul class="nav-links">
             <li><a href="index.jsp">Home</a></li>
-            <li><a href="store.jsp">Store</a></li>
-            <li><a href="aboutus.jsp">About Us</a></li>
-            <li><a href="contactus.jsp">Contact Us</a></li>
+            <li><a href="../thilakshana/Store.jsp">Store</a></li>
+            <li><a href="about.jsp">About Us</a></li>
+            <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <li><a href="login.jsp"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
             <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>
             <!-- <li><a href="#" onclick="toggleCartPanel()">Cart 🛒</a></li> -->

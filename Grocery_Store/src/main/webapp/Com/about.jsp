@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Grocery Store</title>
   <!-- <link rel="stylesheet" href="style/index.css"> -->
@@ -22,9 +23,9 @@
           </a>
           <h2 class="name">TheFreshMart</h2>
           <ul class="nav-links">
-            <li><a href="index.jsp" class="active">Home</a></li>
+            <li><a href="index.jsp" >Home</a></li>
             <li><a href="../thilakshana/Store.jsp">Store</a></li>
-            <li><a href="about.jsp">About Us</a></li>
+            <li><a href="about.jsp" class="active">About Us</a></li>
             <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <li><a href="login.jsp"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
             <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>

@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="images/logo_OGS_4.png">
 <title>User Management - TheFreshMart</title>
     <link rel="stylesheet" href="css/user_manea.css">
     <link rel="stylesheet" href="css/e_dashboard.css"/>

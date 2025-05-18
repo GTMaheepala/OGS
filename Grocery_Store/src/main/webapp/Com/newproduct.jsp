@@ -6,6 +6,7 @@
 <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Add new product</title>
+  <link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
   <link rel="stylesheet" href="../css/newproduct.css"/>
   <script src="../js/e_dashboard.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>

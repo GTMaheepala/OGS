@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Register Page</title>
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <link rel='stylesheet' type='text/css' href='../css/register.css'>
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">

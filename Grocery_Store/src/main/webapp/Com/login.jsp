@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
 <title>Website with Login & Registration</title>
     <link rel='stylesheet' href='../css/login.css'>
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">

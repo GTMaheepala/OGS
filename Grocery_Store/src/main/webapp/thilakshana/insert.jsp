@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <meta charset="UTF-8">
     <title>Checkout - TheFreshMart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

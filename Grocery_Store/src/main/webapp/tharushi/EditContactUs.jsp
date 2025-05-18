@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <link rel="stylesheet" href="../css/EditContactUs.css">
     <link rel="stylesheet" type="text/css" href="../css/navigation.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">

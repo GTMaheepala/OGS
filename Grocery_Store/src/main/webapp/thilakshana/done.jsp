@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
 </head>
 <body>
 	<h2>done</h2>

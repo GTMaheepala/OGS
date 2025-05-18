@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
     <link rel="stylesheet" href="../css/P&P.css">
@@ -25,7 +26,7 @@
             <li><a href="index.jsp">Home</a></li>
             <li><a href="../thilakshana/Store.jsp">Store</a></li>
             <li><a href="about.jsp">About Us</a></li>
-            <li><a href="ContactUs.jsp">Contact Us</a></li>
+            <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
     		String profileLink = (user != null) ? "profile.jsp" : "login.jsp";

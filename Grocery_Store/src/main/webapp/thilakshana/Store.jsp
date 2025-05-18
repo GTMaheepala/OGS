@@ -5,6 +5,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Grocery Store</title>
   <link rel="stylesheet" href="../css/index.css">
@@ -375,6 +376,7 @@ background-color: rgba(0, 0, 0, 0.6);
 
 </head>
 <body>
+<div>
 <nav class="navbar">
         <div class="nav-container">
           <a href="../Com/index.jsp">
@@ -384,7 +386,7 @@ background-color: rgba(0, 0, 0, 0.6);
           <ul class="nav-links">
             <li><a href="../Com/index.jsp">Home</a></li>
             <li><a href="Store.jsp" class="active">Store</a></li>
-            <li><a href="../Com/aboutus.jsp">About Us</a></li>
+            <li><a href="../Com/about.jsp">About Us</a></li>
            <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
@@ -414,6 +416,7 @@ background-color: rgba(0, 0, 0, 0.6);
             <button class="search-btn">Search</button>
           </div>
     </nav>
+ </div>
     <main>
     <br><br><br>
         <!-- slide banner 2 -->
@@ -1225,18 +1228,18 @@ background-color: rgba(0, 0, 0, 0.6);
     <div class="footer-column">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="store.html">Store</a></li>
+        <li><a href="../Com/index.jsp">Home</a></li>
+        <li><a href="../thilakshana/Store.jsp">Store</a></li>
         <li><a href="#" onclick="toggleCartPanel()">Cart</a></li>
       </ul>
     </div>
     <div class="footer-column">
       <h4>Support</h4>
       <ul>
-        <li><a href="contactus.html">Contact Us</a></li>
-        <li><a href="T&C.html">Terms of Service</a></li>
-        <li><a href="P&P.html">Privacy Policy</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
+        <li><a href="../Com/T&C.jsp">Terms of Service</a></li>
+        <li><a href="../Com/P&P.jsp">Privacy Policy</a></li>
+        <li><a href="../Com/faq.jsp">FAQ</a></li>
       </ul>
     </div>
     <div class="footer-column">
