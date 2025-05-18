@@ -20,7 +20,7 @@
           <ul class="nav-links">
             <li><a href="index.jsp" class="active">Home</a></li>
             <li><a href="../thilakshana/Store.jsp">Store</a></li>
-            <li><a href="aboutus.jsp">About Us</a></li>
+            <li><a href="about.jsp">About Us</a></li>
             <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
             <%
     		Object user = session.getAttribute("user");
@@ -268,8 +268,8 @@
     <div class="footer-column">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="store.html">Store</a></li>
+        <li><a href="index.jsp">Home</a></li>
+        <li><a href="../thilakshana/Store.jsp">Store</a></li>
         <li><a href="#" onclick="toggleCartPanel()">Cart</a></li>
       </ul>
     </div>

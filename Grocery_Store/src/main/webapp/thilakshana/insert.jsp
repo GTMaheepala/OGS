@@ -21,7 +21,9 @@
 
 <div class="form-wrapper">
     <div class="header">
-        <img src="images/logo_OGS.png" alt="Logo" class="logo-img">
+        <a href="../Com/index.jsp">
+            <img class="logo-img" src="../images/logo_OGS.png" alt="Logo image" href="../Com/index.jsp">
+          </a>
         <h1>TheFreshMart - Checkout</h1>
     </div>
 	<h3>Fill this form below to complete your order.</h3><hr><br>
