@@ -19,8 +19,8 @@ public class IndexServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<PromotionModel> promotions = PromotionController.getAllPromotions();
-        request.setAttribute("promotions", promotions);
-        request.getRequestDispatcher("Com/index.jsp").forward(request, response);
+		request.setAttribute("allPromotions", promotions);
+        request.getRequestDispatcher("Com/promotion_cards.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

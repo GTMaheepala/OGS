@@ -10,6 +10,31 @@
   <link rel="stylesheet" type="text/css" href="../css/navigation.css">
   <link rel="stylesheet" type="text/css" href="../css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+   .fixed-promo-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+  }
+
+  .fixed-promo-icon button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .fixed-promo-icon button:hover {
+    background-color: #c0392b;
+  }
+  </style>
 </head>
 <body>
 <nav class="navbar">
@@ -132,6 +157,29 @@
       </div>
     </div>
   </section>
+  
+
+<!-- Fixed Promo Button -->
+<div class="fixed-promo-icon">
+  <button onclick="openPromoPopup()" title="View Promotions">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+  </button>
+</div>
+<script>
+  function openPromoPopup() {
+    const popupWidth = 1000;
+    const popupHeight = 700;
+    const left = (screen.width - popupWidth) / 2;
+    const top = (screen.height - popupHeight) / 2;
+
+    window.open(
+      '/Grocery_Store/IndexServlet', // Your promotions servlet or JSP page
+      'PromoPopup',
+      `width=${popupWidth},height=${popupHeight},top=${top},left=${left},resizable=yes,scrollbars=yes`
+    );
+  }
+</script>
+
 
   <!-- Category -->
   <section class="category-section">
