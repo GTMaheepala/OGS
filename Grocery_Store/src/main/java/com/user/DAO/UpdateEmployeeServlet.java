@@ -22,7 +22,8 @@ public class UpdateEmployeeServlet extends HttpServlet {
 		
 	}
 
-
+	// ✅ Method overriding: we override the parent class's doPost method
+    @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id= request.getParameter("id");
 		String first_name= request.getParameter("first_name");
@@ -37,6 +38,11 @@ public class UpdateEmployeeServlet extends HttpServlet {
 		int Id = Integer.parseInt(id);
 		int phone = Integer.parseInt(phone_no);
 		int checkuser = Integer.parseInt(request.getParameter("check_user"));
+		
+		 // Here you would write your DB update logic
+        // For example: EmployeeDAO.updateEmployee(...);
+        System.out.println("Updating Employee ID: " + id);
+
 		
 		isTrue = UserController.updateEmployee(Id, first_name, last_name, email, phone, password, checkuser);
 		
