@@ -328,6 +328,17 @@
 	    <servlet-name>GetUserCheckoutServlet</servlet-name>
 	    <url-pattern>/GetUserCheckoutServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- tharusha package -->
+     <servlet>
+    	<servlet-name>IndexServlet</servlet-name>
+    	<servlet-class>com.promotion.DAO.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>IndexServlet</servlet-name>
+	    <url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>
