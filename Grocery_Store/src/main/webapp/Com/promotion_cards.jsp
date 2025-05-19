@@ -35,7 +35,7 @@
 
                 <div class="promo-info">
                     <p><i class="fas fa-tag"></i> <strong>Discount Type:</strong> ${promotions.discountType}</p>
-                    <p><i class="fas fa-tag"></i> <strong>Value:</strong> ${promotions.value}</p>
+                    <p><i class="fas fa-dollar-sign"></i> <strong>Value:</strong> ${promotions.value}</p>
                     <p><i class="fas fa-calendar-day"></i> <strong>From:</strong> ${promotions.validFrom}</p>
                     <p><i class="fas fa-calendar-check"></i> <strong>To:</strong> ${promotions.validTo}</p>
                     <p><i class="fas fa-redo-alt"></i> <strong>Usage Limit:</strong> ${promotions.usageLimit}</p>
