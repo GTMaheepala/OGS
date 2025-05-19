@@ -170,6 +170,7 @@
       </div>
     </form>
   </div>
+    <script src="../js/addEmployee.js"></script>
   <script src="../js/update-profile.js"></script>
 </body>
 </html>

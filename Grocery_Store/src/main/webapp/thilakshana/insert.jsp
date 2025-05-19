@@ -109,48 +109,40 @@
         
     </form>
 </div>
-<!-- Footer -->
-<!--<footer>
-  <div class="footer-container">
-    <div class="footer-column">
-      <h4>About Us</h4>
-      <p>We are passionate about delivering quality content and services to our users worldwide. Your satisfaction is our mission.</p>
-    </div>
-    <div class="footer-column">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.jsp">Home</a></li>
-        <li><a href="../thilakshana/Store.jsp">Store</a></li>
-        <li><a href="#" onclick="toggleCartPanel()">Cart</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="../tharushi/ContactUs.jsp">Contact Us</a></li>
-        <li><a href="T&C.jsp">Terms of Service</a></li>
-        <li><a href="P&P.jsp">Privacy Policy</a></li>
-        <li><a href="faq.jsp">FAQ</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h4>Follow Us</h4>
-      <div class="footer-social">
-        <a href="#" class="social-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#" class="social-icon"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2025 Tharu Baby Co. All rights reserved.
-  </div>
-</footer>
- -->
+
+ <script>
+// Basic form validations
+document.getElementById("checkout-form").addEventListener("submit", function(event) {
+    const cardNumber = document.getElementById("cNo").value.trim();
+    const cvv = document.getElementById("CVV").value.trim();
+    const expDate = document.getElementById("eDate").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const NIC = document.getElementById("NIC").value.trim();
+
+    const cardRegex = /^\d{16}$/;
+    const cvvRegex = /^\d{3}$/;
+    const expRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+    const mobileRegex = /^[0-9]{10}$/;
+    const NICRegex = /^[0-9]{12}$/;
+
+    if (!cardRegex.test(cardNumber.replace(/\s+/g, ''))) {
+        alert("Invalid card number. It should contain exactly 16 digits.");
+        event.preventDefault();
+    } else if (!cvvRegex.test(cvv)) {
+        alert("Invalid CVV. It should contain 3 digits.");
+        event.preventDefault();
+    } else if (!expRegex.test(expDate)) {
+        alert("Invalid expiration date. Use MM/YY format.");
+        event.preventDefault();
+    } else if (!mobileRegex.test(mobile)) {
+        alert("Invalid mobile number. It should be 10 digits.");
+        event.preventDefault();
+    } else if (!NICRegex.test(NIC)) {
+        alert("Invalid NIC. It should be 12 digits.");
+        event.preventDefault();
+    }
+});
+</script>
 <!-- <script src="../js/checkout.js"></script>-->
 </body>
 </html>

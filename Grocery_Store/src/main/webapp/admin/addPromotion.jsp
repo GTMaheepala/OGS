@@ -170,5 +170,6 @@
 	    
 </form>
 <script src="../js/update-profile.js"></script>
+<script src="../js/addPromo.js"></script>
 </body>
 </html>
