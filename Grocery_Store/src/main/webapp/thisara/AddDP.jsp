@@ -21,7 +21,7 @@
         <ul>
             <a href="../Com/e_dashboard.jsp"><li><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
             <a href="order.jsp"><li class="active"><i class="fas fa-box"></i> Orders</li></a>
-            <a href="estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
+            <a href="../thilakshana/Store.jsp"><li><i class="fas fa-store"></i> Store</li></a>
         </ul>
         <div class="profile-section">
             <ul>
