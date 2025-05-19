@@ -22,10 +22,10 @@
     <h2>Admin Panel</h2>
     <ul>
       <a href="a_dashboard.jsp"><li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li></a>
-      <a href="aboutus.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
-      <a href="estore.jsp"><li><i class="fas fa-store"></i> Store</li></a>
+      <a href="about.jsp"><li><i class="fas fa-info-circle"></i> About Us</li></a>
+      <a href="../thilakshana/Store.jsp"><li><i class="fas fa-store"></i> Store</li></a>
       <a href="inventory.jsp"><li><i class="fas fa-boxes"></i> Order & Inventory</li></a>
-      <a href="contactus.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
+      <a href="../tharushi/ContactUs.jsp"><li><i class="fas fa-envelope"></i> Contact Us</li></a>
     </ul>
     <div class="profile-section">
       <ul>
