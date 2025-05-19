@@ -16,7 +16,7 @@
 	
     <div class="sidebar">
         <a href="index.html">
-            <img class="logo" src="images/logo_GS.png" alt="TheFreshMart Logo">
+            <img class="logo" src="../images/logo_GS.png" alt="TheFreshMart Logo">
         </a>
         <h2>Employee Panel</h2>
         <ul>
