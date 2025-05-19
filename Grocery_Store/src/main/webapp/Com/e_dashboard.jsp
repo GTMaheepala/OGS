@@ -71,6 +71,11 @@
         <h3>Customer Reviews</h3>
         <p>Respond to inquiries</p>
       </div></a>
+      <a href="../GetAllServlet">
+      <div class="card">
+        <h3>Customer Order</h3>
+        <p>Respond to inquiries</p>
+      </div></a>
       <!--  <a href="employee_mane.html">
       <div class="card">
         <h3>Employee Manage</h3>

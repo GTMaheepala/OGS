@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>FreshMart</title>
-<link rel="icon" type="image/png" href="../images/logo_OGS_4.png">
  <style>
     body {
         margin: 0;
@@ -87,6 +86,7 @@
 </style>
 </head>
 <body>
+
 <%
 	String id = request.getParameter("id");
 	String country = request.getParameter("country");
@@ -109,12 +109,12 @@
 		
             <!-- Address Section -->
             <div class="form-section">
-            	
+         
             	<label>ID:</label>
             	<input type="text" name="id" value="<%=id%>" readonly>
          
                 <h2>Delivery Address</h2>
-                <select id="country" name="check_country" required>
+                <select id="country" name="country" required>
                     <option value="">Select Country</option>
                     <option value="Sri Lanka" <%= "Sri Lanka".equals(country) ? "selected" : "" %>>Sri Lanka</option>
                     <option value="India" <%= "India".equals(country) ? "selected" : "" %>>India</option>

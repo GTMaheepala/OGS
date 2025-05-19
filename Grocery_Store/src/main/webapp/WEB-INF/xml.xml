@@ -317,6 +317,17 @@
 	    <servlet-name>GetUserMessagesServlet</servlet-name>
 	    <url-pattern>/GetUserMessagesServlet</url-pattern>
 	</servlet-mapping>
+	
+	
+	<!-- thilakshana package -->
+     <servlet>
+    	<servlet-name>GetUserCheckoutServlet</servlet-name>
+    	<servlet-class>com.checkout.DAO.GetUserCheckoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>GetUserCheckoutServlet</servlet-name>
+	    <url-pattern>/GetUserCheckoutServlet</url-pattern>
+	</servlet-mapping>
 
 
 </web-app>

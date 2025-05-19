@@ -80,7 +80,7 @@
     
     <!-- Centered Image -->
     <div class="image-wrapper">
-      <img src="images/success.png" alt="Payment Success" />
+      <img src="../images/success.png" alt="Payment Success" />
     </div>
 
     <!-- Button under the image -->

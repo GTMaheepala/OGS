@@ -19,7 +19,7 @@ public class DeleteServlet extends HttpServlet {
 		boolean isTrue = checkoutController.deletedata(id);
 
 		if (isTrue) {
-			response.getWriter().println("<script>alert('Data deleted successfully'); window.location.href='GetAllServlet';</script>");
+			response.getWriter().println("<script>alert('Data deleted successfully'); window.location.href='GetUserCheckoutServlet';</script>");
 		} else {
 			List<checkout> checkoutDetails = checkoutController.getById(id);
 			request.setAttribute("checkoutDetails", checkoutDetails);

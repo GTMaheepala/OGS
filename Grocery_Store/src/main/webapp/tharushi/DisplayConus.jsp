@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -59,7 +58,7 @@
 </button>
 <div class="card">
   <div class="card-header">
-    <h2><i class="fas fa-envelope"></i> Contact Messages</h2>
+    <h2><i class="fa fa-envelope"></i> Contact Messages</h2>
   </div>
   
   <div class="card-body">
@@ -83,13 +82,13 @@
             <td class="action-buttons">
               <a href="tharushi/EditContactUs.jsp?id=${msg.id}&full_name=${msg.fullName}&email=${msg.email}&message=${msg.message}" title="Edit">
                 <button class="edit-btn">
-                  <i class="fas fa-edit"></i>
+                  <i class="fa fa-pencil"></i>
                 </button>
               </a>
               <form action="/Grocery_Store/ConusDeleteServlet" method="post" style="display:inline;">
                 <input type="hidden" name="id" value="${msg.id}" />
                 <button class="delete-btn" title="Delete">
-                  <i class="fas fa-trash"></i>
+                  <i class="fa fa-trash"></i>
                 </button>
               </form>
             </td>

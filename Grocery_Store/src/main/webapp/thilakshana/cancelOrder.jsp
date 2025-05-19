@@ -89,7 +89,7 @@
     
     <!-- Centered Image -->
     <div class="image-wrapper">
-      <img src="images/cancel.png" alt="Payment Cancel" />
+      <img src="../images/cancel.png" alt="Payment Cancel" />
     </div>
 
     <!-- Button under the image -->

@@ -1,9 +1,9 @@
 @charset "UTF-8";
-* {
+/** {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }*/
 
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -13,8 +13,13 @@
             justify-content: center;
             padding: 40px 20px;
         }
+        
+        .navbar{
+        	margin-left:-15.5%;
+        }
 
         .form-wrapper {
+        	margin-top:5%;
             background: #fff;
             padding: 30px;
             border-radius: 20px;

@@ -5,7 +5,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FreshMart - Order Summary</title>
-	<link rel="icon" type="image/png" href="images/logo_OGS_4.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="icon" type="image/png" href="images/logo_OGS_4.png">
 	<style>
 		body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,6 +18,7 @@
 }
 
 h1 {
+	margin-top:5%;
 	color: #1e7c4c;
 	text-align: center;
 	margin-bottom: 40px;
@@ -206,13 +210,40 @@ form {
 	}
 }
 
+.navbar{
+	margin-left:-3%;
+}
+
 	</style>
 </head>
 <body>
+<div>
+<nav class="navbar">
+        <div class="nav-container">
+          <a href="index.jsp">
+            <img class="logo" src="images/logo_OGS.png" alt="Logo image">
+          </a>
+          <h2 class="name">TheFreshMart</h2>
+          <ul class="nav-links">
+            <li><a href="Com/index.jsp" class="active">Home</a></li>
+            <li><a href="thilakshana/Store.jsp">Store</a></li>
+            <li><a href="Com/about.jsp">About Us</a></li>
+            <li><a href="tharushi/ContactUs.jsp">Contact Us</a></li>
+            <%
+    		Object user = session.getAttribute("user");
+    		String profileLink = (user != null) ? "Com/profile.jsp" : "Com/login.jsp";
+			%>
+			<li><a href="<%= profileLink %>"><i class="fa fa-user-circle-o" style="font-size: 30px;" aria-hidden="true"></i></a></li>
 
+            <li><a href="#" onclick="toggleCartPanel()"><i class="fa fa-cart-arrow-down" style="font-size: 30px;" id="cart-icon" data-quantity="0" aria-hidden="true"></i></a></li>
+            <!-- <li><a href="#" onclick="toggleCartPanel()">Cart 🛒</a></li> -->
+          </ul>
+        </div>
+    </nav>
+</div>
 <h1>TheFreshMart - Order Summary</h1>
 
-<c:forEach var="checkout" items="${allCheckouts}">
+<c:forEach var="checkout" items="${checkoutList}">
 	<div class="card">
 		<div class="details">
 			<p><strong>Order ID:</strong> ${checkout.id}</p>
@@ -247,28 +278,30 @@ form {
 
 		<div class="item-summary">
 			<h2>Order Summary</h2>
-			<table class="summary-table" id="itemsTable-${checkout.id}">
+			<table class="summary-table">
 				<thead>
 					<tr>
 						<th>Item</th>
-						<th>Qty</th>
+						<th>Qty(kg)</th>
 						<th>Price</th>
+						<th>Remove</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr data-price="">
-						<td>Banana - Kolikuttu</td>
+					<tr data-price="375">
+						<td>Tomato</td>
 						<td>
 							<div class="qty-controls">
 								<button type="button" class="decrease">−</button>
-								<input type="text" class="qty" value="2" readonly>
+								<input type="text" class="qty" value="1" readonly>
 								<button type="button" class="increase">+</button>
 							</div>
 						</td>
-						<td class="item-total">Rs. 500</td>
+						<td class="item-total">Rs. 375</td>
+						<td><button type="button" class="remove-item">🗑️ Remove</button></td>
 					</tr>
 					<tr data-price="240">
-						<td>Milk</td>
+						<td>Carrot</td>
 						<td>
 							<div class="qty-controls">
 								<button type="button" class="decrease">−</button>
@@ -277,96 +310,145 @@ form {
 							</div>
 						</td>
 						<td class="item-total">Rs. 240</td>
+						<td><button type="button" class="remove-item">🗑️ Remove</button></td>
 					</tr>
 					<tr data-price="200">
-						<td>Rice (per kg)</td>
+						<td>Onion</td>
 						<td>
 							<div class="qty-controls">
 								<button type="button" class="decrease">−</button>
-								<input type="text" class="qty" value="5" readonly>
+								<input type="text" class="qty" value="1" readonly>
 								<button type="button" class="increase">+</button>
 							</div>
 						</td>
 						<td class="item-total">Rs. 1000</td>
+						<td><button type="button" class="remove-item">🗑️ Remove</button></td>
 					</tr>
 				</tbody>
 				<tfoot>
 					<tr class="total-row">
 						<td colspan="2">Total</td>
-						<td class="grandTotal">Rs. 1740</td>
+						<td class="grandTotal" colspan="2">Rs. 0</td>
 					</tr>
 				</tfoot>
 			</table>
 			<div class="form-actions">
-				<button type="submit" class="payNow" onclick="payNow()">Pay Now</button>
+				<button type="button" class="payNow" onclick="payNow()">Pay Now</button>
 				<button type="button" id="goBack" onclick="cancelOrder()">Cancel Order</button>
 			</div>
 		</div>
 	</div>
 </c:forEach>
 
+<div>
+<!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>About Us</h4>
+      <p>We are passionate about delivering quality content and services to our users worldwide. Your satisfaction is our mission.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="Com/index.jsp">Home</a></li>
+        <li><a href="Store.jsp">Store</a></li>
+        <li><a href="#" onclick="toggleCartPanel()">Cart</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="tharushi/ContactUs.jsp">Contact Us</a></li>
+        <li><a href="Com/T&C.jsp">Terms of Service</a></li>
+        <li><a href="Com/P&P.jsp">Privacy Policy</a></li>
+        <li><a href="Com/faq.jsp">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-phone-square" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Tharu Baby Co. All rights reserved.
+  </div>
+</footer>
+</div>
+
 <script>
-
 document.addEventListener('DOMContentLoaded', function () {
-    const cart = document.querySelector('#cart-items-panel'); 
 
-    cart.addEventListener('click', function (e) {
-      if (e.target.classList.contains('delete-item')) {
-        const item = e.target.closest('.cart-item');
-        if (item) {
-          item.remove();
-          updateTotal();
-        }
-      }
-    });
-  });
-
-function updateTotals(card) {
-	const rows = card.querySelectorAll("tbody tr");
-	let total = 0;
-	rows.forEach(row => {
-		const price = parseInt(row.dataset.price);
-		const qty = parseInt(row.querySelector(".qty").value);
-		const rowTotal = price * qty;
-		row.querySelector(".item-total").textContent = "Rs. " + rowTotal;
-		total += rowTotal;
-	});
-	card.querySelector(".grandTotal").textContent = "Rs. " + total;
-}
-
-document.querySelectorAll(".card").forEach(card => {
-	card.querySelectorAll(".increase").forEach(btn => {
-		btn.addEventListener("click", () => {
-			const qtyInput = btn.parentElement.querySelector(".qty");
-			qtyInput.value = parseInt(qtyInput.value) + 1;
-			updateTotals(card);
+	document.querySelectorAll(".card").forEach(card => {
+		// Remove item
+		card.querySelectorAll(".remove-item").forEach(btn => {
+			btn.addEventListener("click", () => {
+				const row = btn.closest("tr");
+				if (row) {
+					row.remove();
+					updateTotals(card);
+				}
+			});
 		});
-	});
-	card.querySelectorAll(".decrease").forEach(btn => {
-		btn.addEventListener("click", () => {
-			const qtyInput = btn.parentElement.querySelector(".qty");
-			let value = parseInt(qtyInput.value);
-			if (value > 1) {
-				qtyInput.value = value - 1;
+
+		// Increase quantity
+		card.querySelectorAll(".increase").forEach(btn => {
+			btn.addEventListener("click", () => {
+				const qtyInput = btn.parentElement.querySelector(".qty");
+				qtyInput.value = parseInt(qtyInput.value) + 1;
 				updateTotals(card);
-			}
+			});
 		});
+
+		// Decrease quantity
+		card.querySelectorAll(".decrease").forEach(btn => {
+			btn.addEventListener("click", () => {
+				const qtyInput = btn.parentElement.querySelector(".qty");
+				let value = parseInt(qtyInput.value);
+				if (value > 1) {
+					qtyInput.value = value - 1;
+					updateTotals(card);
+				}
+			});
+		});
+
+		// Initial calculation
+		updateTotals(card);
 	});
-	updateTotals(card);
+
+	function updateTotals(card) {
+		const rows = card.querySelectorAll("tbody tr");
+		let total = 0;
+		rows.forEach(row => {
+			const price = parseInt(row.dataset.price);
+			const qty = parseInt(row.querySelector(".qty").value);
+			const rowTotal = price * qty;
+			row.querySelector(".item-total").textContent = "Rs. " + rowTotal;
+			total += rowTotal;
+		});
+		card.querySelector(".grandTotal").textContent = "Rs. " + total;
+	}
+
+	window.cancelOrder = function () {
+		if (confirm("Are you sure you want to cancel this order?")) {
+			window.location.href = "thilakshana/cancelOrder.jsp";
+		}
+	}
+
+	window.payNow = function () {
+		if (confirm("Proceed to payment?")) {
+			window.location.href = "thilakshana/paymentSuccessful.jsp";
+		}
+	}
 });
-
-function cancelOrder() {
-	if (confirm("Are you sure you want to cancel this order?")) {
-		window.location.href = "thilakshana/cancelOrder.jsp";
-	}
-}
-
-function payNow() {
-	// Optionally confirm payment
-	if (confirm("Proceed to payment?")) {
-		window.location.href = "thilakshana/paymentSuccessful.jsp";
-	}
-}
 </script>
 
 </body>
